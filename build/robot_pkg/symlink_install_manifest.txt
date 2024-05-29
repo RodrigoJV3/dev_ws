@@ -1,0 +1,15 @@
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/ament_index/resource_index/package_run_dependencies/robot_pkg
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/ament_index/resource_index/parent_prefix_path/robot_pkg
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/environment/ament_prefix_path.sh
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/environment/ament_prefix_path.dsv
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/environment/path.sh
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/environment/path.dsv
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/local_setup.bash
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/local_setup.sh
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/local_setup.zsh
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/local_setup.dsv
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/package.dsv
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/ament_index/resource_index/packages/robot_pkg
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/cmake/robot_pkgConfig.cmake
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/cmake/robot_pkgConfig-version.cmake
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/package.xml
