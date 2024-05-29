@@ -1,1 +1,0 @@
-/home/ttrxx/TTRXX_WS/build/robot_pkg/ament_cmake_core/robot_pkgConfig.cmake

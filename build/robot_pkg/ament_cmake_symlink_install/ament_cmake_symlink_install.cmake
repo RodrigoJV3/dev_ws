@@ -310,6 +310,9 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(DIRECTORY "launch" "meshes" "rviz" "urdf" "DESTINATION" "share/robot_pkg")
+ament_cmake_symlink_install_directory("/home/ttrxx/TTRXX_WS/src/robot_pkg" DIRECTORY "launch" "meshes" "rviz" "urdf" "DESTINATION" "share/robot_pkg")
+
 # install(FILES "/home/ttrxx/TTRXX_WS/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ttrxx/TTRXX_WS/src/robot_pkg" FILES "/home/ttrxx/TTRXX_WS/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

@@ -1,0 +1,56 @@
+[1.887s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/ttrxx/TTRXX_WS']
+[1.888s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/ttrxx/TTRXX_WS'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x736629640a00>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7366297ff520>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7366297ff520>>)
+[3.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.245s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ttrxx/TTRXX_WS'
+[3.245s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extensions ['ignore', 'ignore_ament_install']
+[3.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extension 'ignore'
+[3.246s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extension 'ignore_ament_install'
+[3.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extensions ['colcon_pkg']
+[3.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extension 'colcon_pkg'
+[3.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extensions ['colcon_meta']
+[3.247s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extension 'colcon_meta'
+[3.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extensions ['ros']
+[3.248s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extension 'ros'
+[3.299s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extensions ['cmake', 'python']
+[3.300s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extension 'cmake'
+[3.302s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extension 'python'
+[3.303s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extensions ['python_setup_py']
+[3.304s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS) by extension 'python_setup_py'
+[3.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/build) by extensions ['ignore', 'ignore_ament_install']
+[3.306s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/build) by extension 'ignore'
+[3.307s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/build) ignored
+[3.308s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/install) by extensions ['ignore', 'ignore_ament_install']
+[3.308s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/install) by extension 'ignore'
+[3.309s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/install) ignored
+[3.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/log) by extensions ['ignore', 'ignore_ament_install']
+[3.310s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/log) by extension 'ignore'
+[3.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/log) ignored
+[3.311s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extensions ['ignore', 'ignore_ament_install']
+[3.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extension 'ignore'
+[3.312s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extension 'ignore_ament_install'
+[3.313s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extensions ['colcon_pkg']
+[3.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extension 'colcon_pkg'
+[3.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extensions ['colcon_meta']
+[3.318s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extension 'colcon_meta'
+[3.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extensions ['ros']
+[3.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extension 'ros'
+[3.319s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extensions ['cmake', 'python']
+[3.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extension 'cmake'
+[3.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extension 'python'
+[3.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extensions ['python_setup_py']
+[3.320s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src) by extension 'python_setup_py'
+[3.321s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src/robot_pkg) by extensions ['ignore', 'ignore_ament_install']
+[3.326s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src/robot_pkg) by extension 'ignore'
+[3.326s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src/robot_pkg) by extension 'ignore_ament_install'
+[3.326s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src/robot_pkg) by extensions ['colcon_pkg']
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src/robot_pkg) by extension 'colcon_pkg'
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src/robot_pkg) by extensions ['colcon_meta']
+[3.327s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src/robot_pkg) by extension 'colcon_meta'
+[3.329s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src/robot_pkg) by extensions ['ros']
+[3.329s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ttrxx/TTRXX_WS/src/robot_pkg) by extension 'ros'
+[3.341s] DEBUG:colcon.colcon_core.package_identification:Package '/home/ttrxx/TTRXX_WS/src/robot_pkg' with type 'ros.ament_cmake' and name 'robot_pkg'
+[3.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

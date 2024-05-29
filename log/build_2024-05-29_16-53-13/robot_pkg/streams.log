@@ -1,0 +1,59 @@
+[0.051s] Invoking command in '/home/ttrxx/TTRXX_WS/build/robot_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ttrxx/TTRXX_WS/build/robot_pkg -- -j4 -l4
+[0.123s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.408s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.458s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.601s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.608s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.637s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.673s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.708s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.940s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.944s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.192s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.238s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.300s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.327s] -- Looking for pthread.h
+[1.579s] -- Looking for pthread.h - found
+[1.579s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.716s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.717s] -- Found Threads: TRUE  
+[2.111s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[2.221s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[2.224s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.382s] -- Added test 'lint_cmake' to check CMake code style
+[2.389s] -- Added test 'xmllint' to check XML markup files
+[2.395s] -- Configuring done
+[2.421s] -- Generating done
+[2.428s] -- Build files have been written to: /home/ttrxx/TTRXX_WS/build/robot_pkg
+[2.492s] Invoked command in '/home/ttrxx/TTRXX_WS/build/robot_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ttrxx/TTRXX_WS/build/robot_pkg -- -j4 -l4
+[2.565s] Invoking command in '/home/ttrxx/TTRXX_WS/build/robot_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ttrxx/TTRXX_WS/build/robot_pkg
+[2.573s] -- Install configuration: ""
+[2.574s] -- Execute custom install script
+[2.575s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/urdf/TTRXX_01.urdf.xacro
+[2.590s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/L_wheel_link.STL
+[2.609s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/M_base_link.STL
+[2.627s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/R_wheel_link.STL
+[2.658s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/Support_A_link.STL
+[2.683s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/Support_B_link.STL
+[2.705s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/T_base_link.STL
+[2.736s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/U_base_wheel_1_link.STL
+[2.758s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/U_base_wheel_2_link.STL
+[2.777s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/U_wheel_1_link.STL
+[2.793s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/U_wheel_2_link.STL
+[2.809s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/base_link.STL
+[2.825s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/ament_index/resource_index/package_run_dependencies/robot_pkg
+[2.825s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/ament_index/resource_index/parent_prefix_path/robot_pkg
+[2.826s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/environment/ament_prefix_path.sh
+[2.826s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/environment/ament_prefix_path.dsv
+[2.828s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/environment/path.sh
+[2.830s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/environment/path.dsv
+[2.831s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/local_setup.bash
+[2.832s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/local_setup.sh
+[2.832s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/local_setup.zsh
+[2.833s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/local_setup.dsv
+[2.833s] -- Symlinking: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/package.dsv
+[2.864s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/ament_index/resource_index/packages/robot_pkg
+[2.864s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/cmake/robot_pkgConfig.cmake
+[2.864s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/cmake/robot_pkgConfig-version.cmake
+[2.864s] -- Up-to-date symlink: /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/package.xml
+[2.871s] Invoked command in '/home/ttrxx/TTRXX_WS/build/robot_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ttrxx/TTRXX_WS/build/robot_pkg

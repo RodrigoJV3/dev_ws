@@ -1,0 +1,21 @@
+[0.954s] Invoking command in '/home/ttrxx/TTRXX_WS/src/robot_pkg': PYTHONPATH=/home/ttrxx/TTRXX_WS/build/robot_pkg/prefix_override:/home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_pkg build --build-base /home/ttrxx/TTRXX_WS/build/robot_pkg/build install --record /home/ttrxx/TTRXX_WS/build/robot_pkg/install.log --single-version-externally-managed install_data
+[1.302s] running egg_info
+[1.303s] writing ../../build/robot_pkg/robot_pkg.egg-info/PKG-INFO
+[1.303s] writing dependency_links to ../../build/robot_pkg/robot_pkg.egg-info/dependency_links.txt
+[1.303s] writing entry points to ../../build/robot_pkg/robot_pkg.egg-info/entry_points.txt
+[1.304s] writing requirements to ../../build/robot_pkg/robot_pkg.egg-info/requires.txt
+[1.304s] writing top-level names to ../../build/robot_pkg/robot_pkg.egg-info/top_level.txt
+[1.306s] reading manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+[1.307s] adding license file 'LICENSE'
+[1.307s] writing manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+[1.308s] running build
+[1.308s] running build_py
+[1.308s] running install
+[1.308s] running install_lib
+[1.310s] running install_data
+[1.310s] running install_egg_info
+[1.312s] removing '/home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[1.312s] Copying ../../build/robot_pkg/robot_pkg.egg-info to /home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info
+[1.314s] running install_scripts
+[1.353s] writing list of installed files to '/home/ttrxx/TTRXX_WS/build/robot_pkg/install.log'
+[1.389s] Invoked command in '/home/ttrxx/TTRXX_WS/src/robot_pkg' returned '0': PYTHONPATH=/home/ttrxx/TTRXX_WS/build/robot_pkg/prefix_override:/home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_pkg build --build-base /home/ttrxx/TTRXX_WS/build/robot_pkg/build install --record /home/ttrxx/TTRXX_WS/build/robot_pkg/install.log --single-version-externally-managed install_data
