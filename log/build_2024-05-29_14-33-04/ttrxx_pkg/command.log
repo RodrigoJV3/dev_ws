@@ -1,2 +1,0 @@
-Invoking command in '/home/ttrxx/ttrxx_ws/build/ttrxx_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ttrxx/ttrxx_ws/build/ttrxx_pkg -- -j4 -l4
-Invoked command in '/home/ttrxx/ttrxx_ws/build/ttrxx_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ttrxx/ttrxx_ws/build/ttrxx_pkg -- -j4 -l4

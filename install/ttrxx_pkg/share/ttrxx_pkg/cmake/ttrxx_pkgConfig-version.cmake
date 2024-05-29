@@ -1,1 +1,0 @@
-/home/ttrxx/dev_ws/build/ttrxx_pkg/ament_cmake_core/ttrxx_pkgConfig-version.cmake
