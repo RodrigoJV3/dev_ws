@@ -1,0 +1,6 @@
+[0.052s] Invoking command in '/home/ttrxx/ttrxx_ws/build/ttrxx_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ttrxx/ttrxx_ws/build/ttrxx_pkg -- -j4 -l4
+[0.194s] [0mCMake Error: The current CMakeCache.txt directory /home/ttrxx/ttrxx_ws/build/ttrxx_pkg/CMakeCache.txt is different than the directory /home/ttrxx/dev_ws/build/ttrxx_pkg where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.243s] [0mCMake Error: The source directory "/home/ttrxx/dev_ws/src/ttrxx_pkg" does not exist.
+[0.244s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.257s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.267s] Invoked command in '/home/ttrxx/ttrxx_ws/build/ttrxx_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ttrxx/ttrxx_ws/build/ttrxx_pkg -- -j4 -l4
