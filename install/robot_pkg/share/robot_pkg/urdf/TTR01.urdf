@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="TTR01">
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00041523 3.8019E-10 -0.018258"
+        rpy="0 0 0" />
+      <mass
+        value="0.68529" />
+      <inertia
+        ixx="0.00041086"
+        ixy="-1.1043E-10"
+        ixz="-2.371E-06"
+        iyy="0.00051876"
+        iyz="7.228E-12"
+        izz="0.00084468" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="L_wheel_link">
+    <inertial>
+      <origin
+        xyz="-5.629E-10 5.4357E-10 -0.015886"
+        rpy="0 0 0" />
+      <mass
+        value="0.048724" />
+      <inertia
+        ixx="1.5816E-05"
+        ixy="4.1458E-09"
+        ixz="-1.7893E-13"
+        iyy="1.5814E-05"
+        iyz="1.7858E-13"
+        izz="2.6155E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/L_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/L_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.071 -0.0225"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.323"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="R_wheel_link">
+    <inertial>
+      <origin
+        xyz="-4.8323E-10 -6.1547E-10 0.015886"
+        rpy="0 0 0" />
+      <mass
+        value="0.048724" />
+      <inertia
+        ixx="1.5817E-05"
+        ixy="-3.7851E-09"
+        ixz="1.5281E-13"
+        iyy="1.5813E-05"
+        iyz="2.0138E-13"
+        izz="2.6155E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/R_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/R_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.071 -0.0225"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.323"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="U_base_wheel_1_link">
+    <inertial>
+      <origin
+        xyz="0.0041491 -8.4566E-05 0.0053957"
+        rpy="0 0 0" />
+      <mass
+        value="0.009087" />
+      <inertia
+        ixx="5.254E-07"
+        ixy="-4.3301E-10"
+        ixz="-9.4848E-08"
+        iyy="4.8759E-07"
+        iyz="1.0854E-09"
+        izz="7.6419E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/U_base_wheel_1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/U_base_wheel_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="U_base_wheel_1_joint"
+    type="continuous">
+    <origin
+      xyz="0.057514 0 -0.0234"
+      rpy="3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="U_base_wheel_1_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="0.323"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="U_wheel_1_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0045951" />
+      <inertia
+        ixx="2.7312E-07"
+        ixy="-2.2683E-23"
+        ixz="-2.3051E-23"
+        iyy="2.7312E-07"
+        iyz="-8.8302E-23"
+        izz="4.0127E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/U_wheel_1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/U_wheel_1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="U_wheel_1_joint"
+    type="continuous">
+    <origin
+      xyz="0.015768 -0.00018037 0.019619"
+      rpy="1.5822 -1.5708 0" />
+    <parent
+      link="U_base_wheel_1_link" />
+    <child
+      link="U_wheel_1_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.323"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="U_base_wheel_2_link">
+    <inertial>
+      <origin
+        xyz="-0.0041491 8.4566E-05 0.0019957"
+        rpy="0 0 0" />
+      <mass
+        value="0.009087" />
+      <inertia
+        ixx="5.254E-07"
+        ixy="-4.3301E-10"
+        ixz="9.4848E-08"
+        iyy="4.8759E-07"
+        iyz="-1.0854E-09"
+        izz="7.6419E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/U_base_wheel_2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/U_base_wheel_2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="U_base_wheel_2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.057514 0 -0.0268"
+      rpy="3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="U_base_wheel_2_link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="0.323"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="U_wheel_2_link">
+    <inertial>
+      <origin
+        xyz="0 1.3878E-17 -8.6736E-19"
+        rpy="0 0 0" />
+      <mass
+        value="0.0045951" />
+      <inertia
+        ixx="2.7312E-07"
+        ixy="4.1047E-23"
+        ixz="1.9175E-23"
+        iyy="2.7312E-07"
+        iyz="-7.2378E-23"
+        izz="4.0127E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/U_wheel_2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/U_wheel_2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="U_wheel_2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.015768 0.00018037 0.016219"
+      rpy="1.5822 -1.5708 0" />
+    <parent
+      link="U_base_wheel_2_link" />
+    <child
+      link="U_wheel_2_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0.323"
+      velocity="10.47" />
+  </joint>
+  <link
+    name="Support_A_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/Support_A_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/Support_A_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Support_A_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.02"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Support_A_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="M_base_link">
+    <inertial>
+      <origin
+        xyz="2.0673E-17 0.00022336 -0.0025145"
+        rpy="0 0 0" />
+      <mass
+        value="0.058516" />
+      <inertia
+        ixx="9.721E-05"
+        ixy="1.6542E-21"
+        ixz="3.1135E-22"
+        iyy="9.3239E-05"
+        iyz="-5.8008E-09"
+        izz="0.0001902" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/M_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.11373 0.11373 0.11373 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/M_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="M_base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.025"
+      rpy="0 0 0" />
+    <parent
+      link="Support_A_link" />
+    <child
+      link="M_base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Support_B_link">
+    <inertial>
+      <origin
+        xyz="-0.011902 0.011666 -0.0036221"
+        rpy="0 0 0" />
+      <mass
+        value="0.02878" />
+      <inertia
+        ixx="1.1292E-06"
+        ixy="-1.0751E-12"
+        ixz="2.9227E-11"
+        iyy="1.1292E-06"
+        iyz="1.8804E-11"
+        izz="1.0391E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/Support_B_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/Support_B_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Support_B_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.0255"
+      rpy="0 0 0" />
+    <parent
+      link="M_base_link" />
+    <child
+      link="Support_B_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="T_base_link">
+    <inertial>
+      <origin
+        xyz="0.0001592 -9.7064E-06 -2.3829E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.11503" />
+      <inertia
+        ixx="0.00013683"
+        ixy="-1.5545E-07"
+        ixz="-1.9179E-07"
+        iyy="0.0001469"
+        iyz="-9.5363E-09"
+        izz="0.00027425" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/T_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_pkg/meshes/T_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="T_base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.0305"
+      rpy="0 0 0" />
+    <parent
+      link="Support_B_link" />
+    <child
+      link="T_base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
