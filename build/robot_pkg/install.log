@@ -2,7 +2,7 @@
 /home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot_pkg/__pycache__/__init__.cpython-310.pyc
 /home/ttrxx/TTRXX_WS/install/robot_pkg/share/ament_index/resource_index/packages/robot_pkg
 /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/package.xml
-/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/urdf/TTR01.urdf
+/home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/urdf/TTR01.urdf.xacro
 /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/launch/display.launch.py
 /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/U_wheel_2_link.STL
 /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes/U_wheel_1_link.STL
