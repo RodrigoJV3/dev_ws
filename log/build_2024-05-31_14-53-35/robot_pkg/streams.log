@@ -1,0 +1,18 @@
+[1.476s] Invoking command in '/home/ttrxx/TTRXX_WS/build/robot_pkg': PYTHONPATH=/home/ttrxx/TTRXX_WS/build/robot_pkg/prefix_override:/home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ttrxx/TTRXX_WS/build/robot_pkg/build --no-deps symlink_data
+[2.122s] running develop
+[2.124s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.125s]   warnings.warn(
+[2.497s] running egg_info
+[2.498s] writing robot_pkg.egg-info/PKG-INFO
+[2.500s] writing dependency_links to robot_pkg.egg-info/dependency_links.txt
+[2.502s] writing entry points to robot_pkg.egg-info/entry_points.txt
+[2.504s] writing requirements to robot_pkg.egg-info/requires.txt
+[2.505s] writing top-level names to robot_pkg.egg-info/top_level.txt
+[2.511s] reading manifest file 'robot_pkg.egg-info/SOURCES.txt'
+[2.516s] writing manifest file 'robot_pkg.egg-info/SOURCES.txt'
+[2.521s] running build_ext
+[2.523s] Creating /home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot-pkg.egg-link (link to .)
+[2.526s] 
+[2.526s] Installed /home/ttrxx/TTRXX_WS/build/robot_pkg
+[2.526s] running symlink_data
+[2.591s] Invoked command in '/home/ttrxx/TTRXX_WS/build/robot_pkg' returned '0': PYTHONPATH=/home/ttrxx/TTRXX_WS/build/robot_pkg/prefix_override:/home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ttrxx/TTRXX_WS/build/robot_pkg/build --no-deps symlink_data

@@ -2,23 +2,24 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="TTR01">
 
   <link
     name="base_link">
     <inertial>
       <origin
-        xyz="0.00041523 3.8019E-10 -0.018258"
+        xyz="0.00041344 3.7856E-10 -0.018281"
         rpy="0 0 0" />
       <mass
-        value="0.68529" />
+        value="0.68825" />
       <inertia
-        ixx="0.00041086"
+        ixx="0.00041167"
         ixy="-1.1043E-10"
-        ixz="-2.371E-06"
-        iyy="0.00051876"
-        iyz="7.228E-12"
-        izz="0.00084468" />
+        ixz="-2.4196E-06"
+        iyy="0.00052928"
+        iyz="7.1835E-12"
+        izz="0.00085508" />
     </inertial>
     <visual>
       <origin
@@ -160,7 +161,7 @@
     name="U_base_wheel_1_link">
     <inertial>
       <origin
-        xyz="0.0041491 -8.4566E-05 0.0053957"
+        xyz="0.0041491 -8.4566E-05 0.0063957"
         rpy="0 0 0" />
       <mass
         value="0.009087" />
@@ -216,16 +217,16 @@
     name="U_wheel_1_link">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="-0.0015 0 0"
         rpy="0 0 0" />
       <mass
         value="0.0045951" />
       <inertia
         ixx="2.7312E-07"
-        ixy="-2.2683E-23"
-        ixz="-2.3051E-23"
+        ixy="-2.3056E-23"
+        ixz="-2.2711E-23"
         iyy="2.7312E-07"
-        iyz="-8.8302E-23"
+        iyz="-9.4919E-23"
         izz="4.0127E-07" />
     </inertial>
     <visual>
@@ -256,7 +257,7 @@
     name="U_wheel_1_joint"
     type="continuous">
     <origin
-      xyz="0.015768 -0.00018037 0.019619"
+      xyz="0.015768 -0.00018037 0.022119"
       rpy="1.5822 -1.5708 0" />
     <parent
       link="U_base_wheel_1_link" />
@@ -272,7 +273,7 @@
     name="U_base_wheel_2_link">
     <inertial>
       <origin
-        xyz="-0.0041491 8.4566E-05 0.0019957"
+        xyz="-0.0041491 8.4566E-05 0.00049565"
         rpy="0 0 0" />
       <mass
         value="0.009087" />
@@ -312,7 +313,7 @@
     name="U_base_wheel_2_joint"
     type="continuous">
     <origin
-      xyz="-0.057514 0 -0.0268"
+      xyz="-0.057514 0 -0.0293"
       rpy="3.1416 0 0" />
     <parent
       link="base_link" />
@@ -328,7 +329,7 @@
     name="U_wheel_2_link">
     <inertial>
       <origin
-        xyz="0 1.3878E-17 -8.6736E-19"
+        xyz="-0.0015 0 -8.6736E-19"
         rpy="0 0 0" />
       <mass
         value="0.0045951" />
@@ -437,14 +438,14 @@
     name="M_base_link">
     <inertial>
       <origin
-        xyz="2.0673E-17 0.00022336 -0.0025145"
+        xyz="2.0368E-17 0.00022336 -0.0025145"
         rpy="0 0 0" />
       <mass
         value="0.058516" />
       <inertia
         ixx="9.721E-05"
-        ixy="1.6542E-21"
-        ixz="3.1135E-22"
+        ixy="1.83E-21"
+        ixz="3.4946E-22"
         iyy="9.3239E-05"
         iyz="-5.8008E-09"
         izz="0.0001902" />
