@@ -1,5 +1,5 @@
 import launch
-from launch.substitutions import command, LaunchConfiguration
+from launch.substitutions import LaunchConfiguration
 import launch_ros
 import os
 from ament_index_python.packages import get_package_share_directory
@@ -7,7 +7,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    urdf_file_name = 'TTR01.urdf'
+    urdf_file_name = 'TTR01.urdf.xacro'
     urdf = os.path.join(
         get_package_share_directory('robot_pkg'),
         'urdf',
