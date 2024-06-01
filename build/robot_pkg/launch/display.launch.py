@@ -1,1 +1,1 @@
-/home/ttrxx/TTRXX_WS/src/robot_pkg/launch/display.launch.py
+/home/dev-pc/tesis/dev_ws/src/robot_pkg/launch/display.launch.py
