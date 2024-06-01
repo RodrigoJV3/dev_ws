@@ -1,1 +1,0 @@
-/home/ttrxx/TTRXX_WS/src/robot_pkg/setup.py

@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" ?>
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="TTR01">
+
+
 
   <link
     name="base_link">
@@ -45,6 +47,8 @@
       </geometry>
     </collision>
   </link>
+
+
   <link
     name="L_wheel_link">
     <inertial>
@@ -85,6 +89,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="L_wheel_joint"
     type="continuous">
@@ -101,6 +106,8 @@
       effort="0.323"
       velocity="10.47" />
   </joint>
+
+
   <link
     name="R_wheel_link">
     <inertial>
@@ -141,6 +148,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="R_wheel_joint"
     type="continuous">
@@ -157,6 +165,8 @@
       effort="0.323"
       velocity="10.47" />
   </joint>
+
+
   <link
     name="U_base_wheel_1_link">
     <inertial>
@@ -197,6 +207,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="U_base_wheel_1_joint"
     type="continuous">
@@ -213,6 +224,8 @@
       effort="0.323"
       velocity="10.47" />
   </joint>
+
+
   <link
     name="U_wheel_1_link">
     <inertial>
@@ -253,6 +266,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="U_wheel_1_joint"
     type="continuous">
@@ -269,6 +283,8 @@
       effort="0.323"
       velocity="10.47" />
   </joint>
+
+
   <link
     name="U_base_wheel_2_link">
     <inertial>
@@ -309,6 +325,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="U_base_wheel_2_joint"
     type="continuous">
@@ -325,6 +342,8 @@
       effort="0.323"
       velocity="10.47" />
   </joint>
+
+
   <link
     name="U_wheel_2_link">
     <inertial>
@@ -365,6 +384,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="U_wheel_2_joint"
     type="continuous">
@@ -381,6 +401,8 @@
       effort="0.323"
       velocity="10.47" />
   </joint>
+
+
   <link
     name="Support_A_link">
     <inertial>
@@ -421,6 +443,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="Support_A_joint"
     type="fixed">
@@ -434,6 +457,8 @@
     <axis
       xyz="0 0 0" />
   </joint>
+
+
   <link
     name="M_base_link">
     <inertial>
@@ -474,6 +499,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="M_base_joint"
     type="fixed">
@@ -487,6 +513,8 @@
     <axis
       xyz="0 0 0" />
   </joint>
+
+
   <link
     name="Support_B_link">
     <inertial>
@@ -527,6 +555,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="Support_B_joint"
     type="fixed">
@@ -540,6 +569,8 @@
     <axis
       xyz="0 0 0" />
   </joint>
+
+
   <link
     name="T_base_link">
     <inertial>
@@ -580,6 +611,7 @@
       </geometry>
     </collision>
   </link>
+
   <joint
     name="T_base_joint"
     type="fixed">
@@ -593,4 +625,7 @@
     <axis
       xyz="0 0 0" />
   </joint>
+
+  <xacro:include filename="gazebo_setup.xacro" /> <!-- -->
+
 </robot>

@@ -1,0 +1,46 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+Removing /home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot-pkg.egg-link (link to .)
+running egg_info
+writing ../../build/robot_pkg/robot_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/robot_pkg/robot_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/robot_pkg/robot_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/robot_pkg/robot_pkg.egg-info/requires.txt
+writing top-level names to ../../build/robot_pkg/robot_pkg.egg-info/top_level.txt
+reading manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ttrxx/TTRXX_WS/build/robot_pkg/build
+creating /home/ttrxx/TTRXX_WS/build/robot_pkg/build/lib
+creating /home/ttrxx/TTRXX_WS/build/robot_pkg/build/lib/robot_pkg
+copying robot_pkg/__init__.py -> /home/ttrxx/TTRXX_WS/build/robot_pkg/build/lib/robot_pkg
+running install
+running install_lib
+creating /home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot_pkg
+copying /home/ttrxx/TTRXX_WS/build/robot_pkg/build/lib/robot_pkg/__init__.py -> /home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot_pkg
+byte-compiling /home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot_pkg/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/robot_pkg -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg
+copying urdf/gazebo_setup.xacro -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/urdf
+copying urdf/TTR01.urdf.xacro -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/urdf
+copying launch/display.launch.py -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/launch
+copying launch/gazebo.launch.py -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/launch
+copying meshes/U_wheel_2_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/U_wheel_1_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/U_base_wheel_2_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/Support_B_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/Support_A_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/base_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/L_wheel_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/M_base_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/T_base_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/U_base_wheel_1_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+copying meshes/R_wheel_link.STL -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/meshes
+running install_egg_info
+Copying ../../build/robot_pkg/robot_pkg.egg-info to /home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/ttrxx/TTRXX_WS/build/robot_pkg/install.log'

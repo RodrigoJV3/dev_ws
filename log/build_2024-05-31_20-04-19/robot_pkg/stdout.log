@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing robot_pkg.egg-info/PKG-INFO
+writing dependency_links to robot_pkg.egg-info/dependency_links.txt
+writing entry points to robot_pkg.egg-info/entry_points.txt
+writing requirements to robot_pkg.egg-info/requires.txt
+writing top-level names to robot_pkg.egg-info/top_level.txt
+reading manifest file 'robot_pkg.egg-info/SOURCES.txt'
+writing manifest file 'robot_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ttrxx/TTRXX_WS/install/robot_pkg/lib/python3.10/site-packages/robot-pkg.egg-link (link to .)
+
+Installed /home/ttrxx/TTRXX_WS/build/robot_pkg
+running symlink_data
+symbolically linking /home/ttrxx/TTRXX_WS/build/robot_pkg/urdf/gazebo_setup.xacro -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/urdf
+symbolically linking /home/ttrxx/TTRXX_WS/build/robot_pkg/launch/gazebo.launch.py -> /home/ttrxx/TTRXX_WS/install/robot_pkg/share/robot_pkg/launch
