@@ -1,0 +1,32 @@
+[0.352s] Invoking command in '/home/dev-pc/tesis/dev_ws/src/robot_pkg': PYTHONPATH=/home/dev-pc/tesis/dev_ws/build/robot_pkg/prefix_override:/home/dev-pc/tesis/dev_ws/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_pkg build --build-base /home/dev-pc/tesis/dev_ws/build/robot_pkg/build install --record /home/dev-pc/tesis/dev_ws/build/robot_pkg/install.log --single-version-externally-managed install_data
+[0.492s] running egg_info
+[0.492s] writing ../../build/robot_pkg/robot_pkg.egg-info/PKG-INFO
+[0.492s] writing dependency_links to ../../build/robot_pkg/robot_pkg.egg-info/dependency_links.txt
+[0.492s] writing entry points to ../../build/robot_pkg/robot_pkg.egg-info/entry_points.txt
+[0.493s] writing requirements to ../../build/robot_pkg/robot_pkg.egg-info/requires.txt
+[0.493s] writing top-level names to ../../build/robot_pkg/robot_pkg.egg-info/top_level.txt
+[0.494s] reading manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+[0.494s] adding license file 'LICENSE'
+[0.494s] writing manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+[0.494s] running build
+[0.494s] running build_py
+[0.494s] running install
+[0.495s] running install_lib
+[0.495s] running install_data
+[0.495s] copying meshes/Support_A_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.497s] copying meshes/M_base_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.498s] copying meshes/U_base_wheel_1_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.498s] copying meshes/Support_B_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.501s] copying meshes/L_wheel_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.503s] copying meshes/T_base_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.503s] copying meshes/U_wheel_2_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.503s] copying meshes/U_wheel_1_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.504s] copying meshes/U_base_wheel_2_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.504s] copying meshes/R_wheel_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.505s] copying meshes/base_link.STL -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/meshes
+[0.507s] running install_egg_info
+[0.508s] removing '/home/dev-pc/tesis/dev_ws/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.508s] Copying ../../build/robot_pkg/robot_pkg.egg-info to /home/dev-pc/tesis/dev_ws/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info
+[0.509s] running install_scripts
+[0.523s] writing list of installed files to '/home/dev-pc/tesis/dev_ws/build/robot_pkg/install.log'
+[0.543s] Invoked command in '/home/dev-pc/tesis/dev_ws/src/robot_pkg' returned '0': PYTHONPATH=/home/dev-pc/tesis/dev_ws/build/robot_pkg/prefix_override:/home/dev-pc/tesis/dev_ws/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_pkg build --build-base /home/dev-pc/tesis/dev_ws/build/robot_pkg/build install --record /home/dev-pc/tesis/dev_ws/build/robot_pkg/install.log --single-version-externally-managed install_data

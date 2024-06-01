@@ -1,0 +1,22 @@
+[0.349s] Invoking command in '/home/dev-pc/tesis/dev_ws/src/robot_pkg': PYTHONPATH=/home/dev-pc/tesis/dev_ws/build/robot_pkg/prefix_override:/home/dev-pc/tesis/dev_ws/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_pkg build --build-base /home/dev-pc/tesis/dev_ws/build/robot_pkg/build install --record /home/dev-pc/tesis/dev_ws/build/robot_pkg/install.log --single-version-externally-managed install_data
+[0.489s] running egg_info
+[0.489s] writing ../../build/robot_pkg/robot_pkg.egg-info/PKG-INFO
+[0.490s] writing dependency_links to ../../build/robot_pkg/robot_pkg.egg-info/dependency_links.txt
+[0.490s] writing entry points to ../../build/robot_pkg/robot_pkg.egg-info/entry_points.txt
+[0.490s] writing requirements to ../../build/robot_pkg/robot_pkg.egg-info/requires.txt
+[0.490s] writing top-level names to ../../build/robot_pkg/robot_pkg.egg-info/top_level.txt
+[0.491s] reading manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+[0.491s] adding license file 'LICENSE'
+[0.492s] writing manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+[0.492s] running build
+[0.492s] running build_py
+[0.492s] running install
+[0.492s] running install_lib
+[0.493s] running install_data
+[0.493s] copying urdf/TTR01.urdf.xacro -> /home/dev-pc/tesis/dev_ws/install/robot_pkg/share/robot_pkg/urdf
+[0.493s] running install_egg_info
+[0.494s] removing '/home/dev-pc/tesis/dev_ws/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.494s] Copying ../../build/robot_pkg/robot_pkg.egg-info to /home/dev-pc/tesis/dev_ws/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info
+[0.495s] running install_scripts
+[0.508s] writing list of installed files to '/home/dev-pc/tesis/dev_ws/build/robot_pkg/install.log'
+[0.525s] Invoked command in '/home/dev-pc/tesis/dev_ws/src/robot_pkg' returned '0': PYTHONPATH=/home/dev-pc/tesis/dev_ws/build/robot_pkg/prefix_override:/home/dev-pc/tesis/dev_ws/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_pkg build --build-base /home/dev-pc/tesis/dev_ws/build/robot_pkg/build install --record /home/dev-pc/tesis/dev_ws/build/robot_pkg/install.log --single-version-externally-managed install_data
