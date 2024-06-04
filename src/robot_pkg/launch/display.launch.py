@@ -1,54 +1,41 @@
-import launch
-from launch.substitutions import LaunchConfiguration
-import launch_ros
 import os
+import xacro
+import launch_ros
 from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch_ros.actions import Node
 
 
 def generate_launch_description():
 
-    urdf_file_name = 'TTR01.urdf.xacro'
-    urdf = os.path.join(
-        get_package_share_directory('robot_pkg'),
-        'urdf',
-        urdf_file_name)
-    with open(urdf, 'r') as infp:
-        robot_desc = infp.read()
+    # Specify the name of the package and path to xacro file within the package
+    pkg_name = 'robot_pkg'
+    file_subpath = 'urdf/TTR01.urdf.xacro'
 
 
-    robot_state_publisher_node = launch_ros.actions.Node(
+    # Use xacro to process the file
+    xacro_file = os.path.join(get_package_share_directory(pkg_name),file_subpath)
+    robot_description_raw = xacro.process_file(xacro_file).toxml()
+
+
+    # Configure the node
+    node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        name='robot_state_publisher',
         output='screen',
-        parameters=[{'robot_description': robot_desc}],
-        arguments=[urdf]
+        parameters=[{'robot_description': robot_description_raw}] # add other parameters here if required
     )
-    joint_state_publisher_node = launch_ros.actions.Node(
-        package='joint_state_publisher',
-        executable='joint_state_publisher',
-        name='joint_state_publisher',
-        condition=launch.conditions.UnlessCondition(LaunchConfiguration('gui'))
-    )
-    joint_state_publisher_gui_node = launch_ros.actions.Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        name='joint_state_publisher_gui',
-        condition=launch.conditions.IfCondition(LaunchConfiguration('gui'))
-    )
+
     rviz_node = launch_ros.actions.Node(
         package='rviz2',
         executable='rviz2',
         name='rviz2',
         output='screen',
-    )
+    )    
 
-    return launch.LaunchDescription([
-        launch.actions.DeclareLaunchArgument(name='gui', default_value='True',
-                                             description='Flag to enable joint_state_publisher_gui'),
-
-        joint_state_publisher_node,
-        joint_state_publisher_gui_node,
-        robot_state_publisher_node,
+    # Run the node
+    return LaunchDescription ([
+        
+        node_robot_state_publisher,
         rviz_node
     ])
