@@ -1,0 +1,24 @@
+[1.752s] Invoking command in '/home/dev/dev_ws/src/robot_pkg': PYTHONPATH=/home/dev/dev_ws/build/robot_pkg/prefix_override:/home/dev/dev_ws/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_pkg build --build-base /home/dev/dev_ws/build/robot_pkg/build install --record /home/dev/dev_ws/build/robot_pkg/install.log --single-version-externally-managed install_data
+[2.340s] running egg_info
+[2.347s] writing ../../build/robot_pkg/robot_pkg.egg-info/PKG-INFO
+[2.350s] writing dependency_links to ../../build/robot_pkg/robot_pkg.egg-info/dependency_links.txt
+[2.352s] writing entry points to ../../build/robot_pkg/robot_pkg.egg-info/entry_points.txt
+[2.354s] writing requirements to ../../build/robot_pkg/robot_pkg.egg-info/requires.txt
+[2.356s] writing top-level names to ../../build/robot_pkg/robot_pkg.egg-info/top_level.txt
+[2.365s] reading manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+[2.366s] adding license file 'LICENSE'
+[2.368s] writing manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'
+[2.369s] running build
+[2.369s] running build_py
+[2.371s] running install
+[2.371s] running install_lib
+[2.375s] running install_data
+[2.375s] copying package.xml -> /home/dev/dev_ws/install/robot_pkg/share/robot_pkg
+[2.376s] copying urdf/parameters.xacro -> /home/dev/dev_ws/install/robot_pkg/share/robot_pkg/urdf
+[2.377s] copying urdf/TTR01.urdf.xacro -> /home/dev/dev_ws/install/robot_pkg/share/robot_pkg/urdf
+[2.377s] running install_egg_info
+[2.385s] removing '/home/dev/dev_ws/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[2.386s] Copying ../../build/robot_pkg/robot_pkg.egg-info to /home/dev/dev_ws/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info
+[2.388s] running install_scripts
+[2.442s] writing list of installed files to '/home/dev/dev_ws/build/robot_pkg/install.log'
+[2.504s] Invoked command in '/home/dev/dev_ws/src/robot_pkg' returned '0': PYTHONPATH=/home/dev/dev_ws/build/robot_pkg/prefix_override:/home/dev/dev_ws/install/robot_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_pkg build --build-base /home/dev/dev_ws/build/robot_pkg/build install --record /home/dev/dev_ws/build/robot_pkg/install.log --single-version-externally-managed install_data

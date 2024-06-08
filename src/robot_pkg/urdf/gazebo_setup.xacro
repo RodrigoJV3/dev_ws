@@ -8,7 +8,7 @@
     </gazebo>
 
     <gazebo reference="L_wheel_link">
-      <material>Gazebo/White</material>
+      <material>Gazebo/Black</material>
     </gazebo>
 
     <gazebo reference="R_wheel_link">
@@ -31,21 +31,36 @@
       <material>Gazebo/White</material>
     </gazebo>
 
-    <gazebo reference="Support_A_link">
+    <gazebo reference="Support_link">
       <material>Gazebo/Yellow</material>
     </gazebo>
 
-    <gazebo reference="M_base_link">
-      <material>Gazebo/White</material>
+
+    <!-- Define friction for wheels -->
+    <gazebo reference="L_wheel_link">
+        <material>Gazebo/Black</material>
+        <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu> <!-- Fricción estática -->
+                    <mu2>0.8</mu2> <!-- Fricción dinámica -->
+                </ode>
+            </friction>
+        </surface>
     </gazebo>
 
-    <gazebo reference="Support_B_link">
-      <material>Gazebo/Yellow</material>
+    <gazebo reference="R_wheel_link">
+        <material>Gazebo/Black</material>
+        <surface>
+            <friction>
+                <ode>
+                    <mu>1.0</mu>
+                    <mu2>0.8</mu2>
+                </ode>
+            </friction>
+        </surface>
     </gazebo>
 
-    <gazebo reference="T_base_link">
-      <material>Gazebo/White</material>
-    </gazebo>
 
     <!-- Define plugins -->
     <gazebo>
@@ -54,16 +69,29 @@
 
             <joint_name>L_wheel_joint</joint_name>
             <joint_name>R_wheel_joint</joint_name>
-            <joint_name>U_base_wheel_1_joint</joint_name>
+            <!--<joint_name>U_base_wheel_1_joint</joint_name>
             <joint_name>U_wheel_1_joint</joint_name>
             <joint_name>U_base_wheel_2_joint</joint_name>
-            <joint_name>U_wheel_2_joint</joint_name>
+            <joint_name>U_wheel_2_joint</joint_name>-->
         </plugin>
     </gazebo>
 
     <gazebo>
         <plugin name="gazebo_ros_joint_pose_trajectory" filename="libgazebo_ros_joint_pose_trajectory.so">
             <update_rate>2</update_rate>
+        </plugin>
+    </gazebo>
+
+
+    <!-- Differential drive plugin for moving the robot -->
+    <gazebo>
+        <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+            <update_rate>50</update_rate>
+            <left_joint>L_wheel_joint</left_joint>
+            <right_joint>R_wheel_joint</right_joint>
+            <wheel_separation>0.2115</wheel_separation> <!-- Adjust according to your robot -->
+            <wheel_diameter>0.065</wheel_diameter> <!-- Adjust according to your wheels -->
+            <robot_base_frame>base_link</robot_base_frame>
         </plugin>
     </gazebo>
 

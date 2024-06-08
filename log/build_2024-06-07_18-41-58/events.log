@@ -1,0 +1,75 @@
+[0.000000] (-) TimerEvent: {}
+[0.001272] (robot_pkg) JobQueued: {'identifier': 'robot_pkg', 'dependencies': OrderedDict()}
+[0.001467] (robot_pkg) JobStarted: {'identifier': 'robot_pkg'}
+[0.101864] (-) TimerEvent: {}
+[0.202726] (-) TimerEvent: {}
+[0.303702] (-) TimerEvent: {}
+[0.407577] (-) TimerEvent: {}
+[0.511129] (-) TimerEvent: {}
+[0.612255] (-) TimerEvent: {}
+[0.714769] (-) TimerEvent: {}
+[0.815563] (-) TimerEvent: {}
+[0.916491] (-) TimerEvent: {}
+[1.017382] (-) TimerEvent: {}
+[1.119096] (-) TimerEvent: {}
+[1.219964] (-) TimerEvent: {}
+[1.322941] (-) TimerEvent: {}
+[1.425121] (-) TimerEvent: {}
+[1.526598] (-) TimerEvent: {}
+[1.629487] (-) TimerEvent: {}
+[1.730460] (-) TimerEvent: {}
+[1.834671] (-) TimerEvent: {}
+[1.936246] (-) TimerEvent: {}
+[2.038026] (-) TimerEvent: {}
+[2.140295] (-) TimerEvent: {}
+[2.243629] (-) TimerEvent: {}
+[2.345557] (-) TimerEvent: {}
+[2.448211] (-) TimerEvent: {}
+[2.549860] (-) TimerEvent: {}
+[2.654044] (-) TimerEvent: {}
+[2.755569] (-) TimerEvent: {}
+[2.856881] (-) TimerEvent: {}
+[2.959138] (-) TimerEvent: {}
+[3.061821] (-) TimerEvent: {}
+[3.164583] (-) TimerEvent: {}
+[3.207303] (robot_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_pkg', 'build', '--build-base', '/home/dev/dev_ws/build/robot_pkg/build', 'install', '--record', '/home/dev/dev_ws/build/robot_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/dev/dev_ws/src/robot_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'dev', 'LC_TIME': 'es_MX.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/dev', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'es_MX.UTF-8', 'SYSTEMD_EXEC_PID': '4958', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'dev', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dev', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ttrxx:@/tmp/.ICE-unix/1695,unix/ttrxx:/tmp/.ICE-unix/1695', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'es_MX.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/48b44e1d_83fe_4edb_97b0_03384ddc49c6', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'es_MX.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.3QB2O2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.178', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'es_MX.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'es_MX.UTF-8', 'LC_IDENTIFICATION': 'es_MX.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dev/dev_ws/build/robot_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dev/dev_ws/build/robot_pkg/prefix_override:/home/dev/dev_ws/install/robot_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'es_MX.UTF-8', 'LC_PAPER': 'es_MX.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.265159] (-) TimerEvent: {}
+[3.367639] (-) TimerEvent: {}
+[3.468571] (-) TimerEvent: {}
+[3.570842] (-) TimerEvent: {}
+[3.672460] (-) TimerEvent: {}
+[3.773227] (-) TimerEvent: {}
+[3.874805] (-) TimerEvent: {}
+[3.975900] (-) TimerEvent: {}
+[4.077197] (-) TimerEvent: {}
+[4.178134] (-) TimerEvent: {}
+[4.278869] (-) TimerEvent: {}
+[4.380553] (-) TimerEvent: {}
+[4.416696] (robot_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[4.419426] (robot_pkg) StdoutLine: {'line': b'writing ../../build/robot_pkg/robot_pkg.egg-info/PKG-INFO\n'}
+[4.422308] (robot_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_pkg/robot_pkg.egg-info/dependency_links.txt\n'}
+[4.424321] (robot_pkg) StdoutLine: {'line': b'writing entry points to ../../build/robot_pkg/robot_pkg.egg-info/entry_points.txt\n'}
+[4.425928] (robot_pkg) StdoutLine: {'line': b'writing requirements to ../../build/robot_pkg/robot_pkg.egg-info/requires.txt\n'}
+[4.426902] (robot_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/robot_pkg/robot_pkg.egg-info/top_level.txt\n'}
+[4.434682] (robot_pkg) StdoutLine: {'line': b"reading manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'\n"}
+[4.438417] (robot_pkg) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.442900] (robot_pkg) StdoutLine: {'line': b"writing manifest file '../../build/robot_pkg/robot_pkg.egg-info/SOURCES.txt'\n"}
+[4.448149] (robot_pkg) StdoutLine: {'line': b'running build\n'}
+[4.459933] (robot_pkg) StdoutLine: {'line': b'running build_py\n'}
+[4.462140] (robot_pkg) StdoutLine: {'line': b'running install\n'}
+[4.465571] (robot_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[4.469900] (robot_pkg) StdoutLine: {'line': b'running install_data\n'}
+[4.473009] (robot_pkg) StdoutLine: {'line': b'copying urdf/TTR01.urdf.xacro -> /home/dev/dev_ws/install/robot_pkg/share/robot_pkg/urdf\n'}
+[4.473278] (robot_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.480723] (-) TimerEvent: {}
+[4.484223] (robot_pkg) StdoutLine: {'line': b"removing '/home/dev/dev_ws/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.520869] (robot_pkg) StdoutLine: {'line': b'Copying ../../build/robot_pkg/robot_pkg.egg-info to /home/dev/dev_ws/install/robot_pkg/lib/python3.10/site-packages/robot_pkg-0.0.0-py3.10.egg-info\n'}
+[4.533724] (robot_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[4.581275] (-) TimerEvent: {}
+[4.629965] (robot_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/dev/dev_ws/build/robot_pkg/install.log'\n"}
+[4.687920] (-) TimerEvent: {}
+[4.775245] (robot_pkg) CommandEnded: {'returncode': 0}
+[4.788114] (-) TimerEvent: {}
+[4.889400] (-) TimerEvent: {}
+[4.921358] (robot_pkg) JobEnded: {'identifier': 'robot_pkg', 'rc': 0}
+[4.930311] (-) EventReactorShutdown: {}

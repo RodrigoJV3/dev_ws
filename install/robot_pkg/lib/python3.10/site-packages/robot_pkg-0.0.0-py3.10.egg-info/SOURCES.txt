@@ -11,17 +11,6 @@ setup.py
 ../../build/robot_pkg/robot_pkg.egg-info/zip-safe
 launch/display.launch.py
 launch/gazebo.launch.py
-meshes/L_wheel_link.STL
-meshes/M_base_link.STL
-meshes/R_wheel_link.STL
-meshes/Support_A_link.STL
-meshes/Support_B_link.STL
-meshes/T_base_link.STL
-meshes/U_base_wheel_1_link.STL
-meshes/U_base_wheel_2_link.STL
-meshes/U_wheel_1_link.STL
-meshes/U_wheel_2_link.STL
-meshes/base_link.STL
 resource/robot_pkg
 robot_pkg/__init__.py
 test/test_copyright.py

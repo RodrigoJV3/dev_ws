@@ -5,37 +5,40 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
-
 def generate_launch_description():
-
     # Specify the name of the package and path to xacro file within the package
     pkg_name = 'robot_pkg'
     file_subpath = 'urdf/TTR01.urdf.xacro'
-
 
     # Use xacro to process the file
     xacro_file = os.path.join(get_package_share_directory(pkg_name),file_subpath)
     robot_description_raw = xacro.process_file(xacro_file).toxml()
 
-
-    # Configure the node
+    # Configure the nodes
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[{'robot_description': robot_description_raw}] # add other parameters here if required
+        parameters=[{'robot_description': robot_description_raw}]
     )
 
     rviz_node = launch_ros.actions.Node(
         package='rviz2',
         executable='rviz2',
         name='rviz2',
-        output='screen',
-    )    
+        output='screen'
+    )
 
-    # Run the node
-    return LaunchDescription ([
-        
+    joint_state_publisher_gui_node = Node(
+        package='joint_state_publisher_gui',
+        executable='joint_state_publisher_gui',
+        name='joint_state_publisher_gui',
+        output='screen'
+    )
+
+    # Run the nodes
+    return LaunchDescription([
         node_robot_state_publisher,
-        rviz_node
+        rviz_node,
+        joint_state_publisher_gui_node
     ])
