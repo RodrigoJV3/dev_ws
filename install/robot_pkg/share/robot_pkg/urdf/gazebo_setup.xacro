@@ -69,10 +69,10 @@
 
             <joint_name>L_wheel_joint</joint_name>
             <joint_name>R_wheel_joint</joint_name>
-            <!--<joint_name>U_base_wheel_1_joint</joint_name>
+            <joint_name>U_base_wheel_1_joint</joint_name>
             <joint_name>U_wheel_1_joint</joint_name>
             <joint_name>U_base_wheel_2_joint</joint_name>
-            <joint_name>U_wheel_2_joint</joint_name>-->
+            <joint_name>U_wheel_2_joint</joint_name>
         </plugin>
     </gazebo>
 

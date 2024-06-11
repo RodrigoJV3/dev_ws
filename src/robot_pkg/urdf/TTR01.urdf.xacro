@@ -2,13 +2,13 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="TTR01">
 
-    <!--world frame-->
-    <xacro:include filename="parameters.xacro"/>
+    <!--base/world frame-->
+    <xacro:include filename="robot_parameters.xacro"/>
 
     <link name="base_link"> </link>
 
 
-    <!--base frame-->
+    <!--Bottom base frame-->
     <joint name="B_base_joint" type="fixed">
         <origin xyz="0 0 0.05606" rpy="0 0 0"/>
 
@@ -17,11 +17,11 @@
     </joint>
 
     <xacro:property name="B_base_length" value="0.005"/>
-    <xacro:property name="B_base_radius" value="0.085"/>
+    <xacro:property name="B_base_radius" value="0.089"/>
 
     <link name="B_base_link">
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 -${B_base_length/2}" rpy="0 0 0"/>
 
             <geometry>    
                 <!--<mesh filename="package://robot_pkg/meshes/base_link.STL" />-->
@@ -32,7 +32,7 @@
         </visual>
 
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 -${B_base_length/2}" rpy="0 0 0"/>
 
             <geometry>
                 <!--<mesh filename="package://robot_pkg/meshes/base_link.STL" />-->            
@@ -47,9 +47,9 @@
     </link>
 
 
-    <!--L_wheel_frame-->
+    <!--Left wheel frame-->
     <joint name="L_wheel_joint" type="continuous">
-        <origin xyz="0 -0.0986 -0.0225" rpy="${-pi/2} ${-pi/2} ${pi}"/>
+        <origin xyz="0 -0.10575 -0.0225" rpy="${-pi/2} ${-pi/2} ${pi}"/>
 
         <parent link="B_base_link"/>
         <child link="L_wheel_link"/>    
@@ -80,15 +80,15 @@
         </collision>
 
         <xacro:inertial_cylinder mass="0.05" length="${wheel_thickness}" radius="${wheel_radius}">
-            <origin xyz="0 -0.0986 -0.023" rpy="${-pi/2} ${-pi/2} ${pi}"/>
+            <origin xyz="0 -0.10575 -0.023" rpy="${-pi/2} ${-pi/2} ${pi}"/>
 
         </xacro:inertial_cylinder>
     </link>
 
 
-    <!--R_wheel_frame-->
+    <!--Right wheel frame-->
     <joint name="R_wheel_joint" type="continuous">
-        <origin xyz="0 0.0986 -0.0225" rpy="${-pi/2} ${pi/2} 0"/>
+        <origin xyz="0 0.10575 -0.0225" rpy="${-pi/2} ${pi/2} 0"/>
 
         <parent link="B_base_link"/>
         <child link="R_wheel_link"/>    
@@ -116,11 +116,161 @@
         </collision>
 
         <xacro:inertial_cylinder mass="0.05" length="${wheel_thickness}" radius="${wheel_radius}">
-            <origin xyz="0 0.0986 -0.0225" rpy="${-pi/2} ${pi/2} 0"/>
+            <origin xyz="0 0.10575 -0.0225" rpy="${-pi/2} ${pi/2} 0"/>
 
         </xacro:inertial_cylinder>
     </link>
 
+
+    <!--Caster wheel base 1-->
+    <joint name="U_base_wheel_1_joint" type="continuous">
+        <origin xyz="0.05751 0 -0.0278" rpy="${pi} 0 0"/>
+
+        <parent link="B_base_link"/>
+        <child link="U_base_wheel_1_link"/>    
+        <axis xyz="0 0 -1"/>
+        <limit effort="0.323" velocity="10.47" />    
+    </joint>
+
+    <xacro:property name="U_base_box_X" value="0.028"/>
+    <xacro:property name="U_base_box_Y" value="0.032"/>
+    <xacro:property name="U_base_box_Z" value="0.04402"/>
+
+    <link name="U_base_wheel_1_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <box size="${U_base_box_X} ${U_base_box_Y} ${U_base_box_Z}"/>
+            </geometry>
+
+            <material name="light_gray"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <box size="${U_base_box_X} ${U_base_box_Y} ${U_base_box_Z}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_box mass="0.0125" x="${U_base_box_X}" y="${U_base_box_Y}" z="${U_base_box_Z}">
+            <origin xyz="0.05751 0 -0.0278" rpy="${pi} 0 0"/>
+
+        </xacro:inertial_box>
+    </link>
+
+
+    <!--Caster wheel 1-->
+    <joint name="U_wheel_1_joint" type="continuous">
+        <origin xyz="0.01577 0 0.01622" rpy="${pi/2} 0 0"/>
+
+        <parent link="U_base_wheel_1_link"/>
+        <child link="U_wheel_1_link"/>    
+        <axis xyz="0 0 1"/>
+        <limit effort="0.323" velocity="10.47" />    
+    </joint>
+
+    <xacro:property name="U_wheel_thickness" value="0.0144"/>
+    <xacro:property name="U_wheel_radius" value="0.0115"/>
+
+    <link name="U_wheel_1_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <cylinder radius="${U_wheel_radius}" length="${U_wheel_thickness}"/>
+            </geometry>
+
+            <material name="white"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <cylinder radius="${U_wheel_radius}" length="${U_wheel_thickness}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_cylinder mass="0.005" length="${U_wheel_thickness}" radius="${U_wheel_radius}">
+            <origin xyz="0.01577 0 0.01622" rpy="${pi/2} 0 ${pi/2}"/>
+        
+        </xacro:inertial_cylinder>
+    </link>
+
+
+    <!--Caster wheel base 2-->
+    <joint name="U_base_wheel_2_joint" type="continuous">
+        <origin xyz="-0.05751 0 -0.0278" rpy="${pi} 0 ${pi}"/>
+
+        <parent link="B_base_link"/>
+        <child link="U_base_wheel_2_link"/>    
+        <axis xyz="0 0 -1"/>
+        <limit effort="0.323" velocity="10.47" />    
+    </joint>
+
+    <link name="U_base_wheel_2_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <box size="${U_base_box_X} ${U_base_box_Y} ${U_base_box_Z}"/>
+            </geometry>
+
+            <material name="light_gray"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <box size="${U_base_box_X} ${U_base_box_Y} ${U_base_box_Z}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_box mass="0.0125" x="${U_base_box_X}" y="${U_base_box_Y}" z="${U_base_box_Z}">
+            <origin xyz="-0.05751 0 -0.0278" rpy="${pi} 0 0"/>
+
+        </xacro:inertial_box>
+    </link>
+
+
+    <!--Caster wheel 2-->
+    <joint name="U_wheel_2_joint" type="continuous">
+        <origin xyz="0.01577 0 0.01622" rpy="${pi/2} 0 0"/>
+
+        <parent link="U_base_wheel_2_link"/>
+        <child link="U_wheel_2_link"/>    
+        <axis xyz="0 0 1"/>
+        <limit effort="0.323" velocity="10.47" />    
+    </joint>
+
+    <link name="U_wheel_2_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <cylinder radius="${U_wheel_radius}" length="${U_wheel_thickness}"/>
+            </geometry>
+
+            <material name="white"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <cylinder radius="${U_wheel_radius}" length="${U_wheel_thickness}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_cylinder mass="0.005" length="${U_wheel_thickness}" radius="${U_wheel_radius}">
+            <origin xyz="0.01577 0 0.01622" rpy="${pi/2} 0 ${pi/2}"/>
+        
+        </xacro:inertial_cylinder>
+    </link>
 
     <xacro:include filename="gazebo_setup.xacro"/>
 

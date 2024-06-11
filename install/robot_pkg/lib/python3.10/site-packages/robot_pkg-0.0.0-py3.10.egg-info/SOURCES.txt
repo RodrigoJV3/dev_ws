@@ -18,4 +18,4 @@ test/test_flake8.py
 test/test_pep257.py
 urdf/TTR01.urdf.xacro
 urdf/gazebo_setup.xacro
-urdf/parameters.xacro
+urdf/robot_parameters.xacro
