@@ -32,13 +32,12 @@
     </gazebo>
 
     <gazebo reference="Support_link">
-      <material>Gazebo/Yellow</material>
+      <material>Gazebo/White</material>
     </gazebo>
 
 
     <!-- Define friction for wheels -->
     <gazebo reference="L_wheel_link">
-        <material>Gazebo/Black</material>
         <surface>
             <friction>
                 <ode>
@@ -50,7 +49,6 @@
     </gazebo>
 
     <gazebo reference="R_wheel_link">
-        <material>Gazebo/Black</material>
         <surface>
             <friction>
                 <ode>
@@ -60,6 +58,53 @@
             </friction>
         </surface>
     </gazebo>
+
+
+    <!-- Define friction for caster wheels -->
+    <gazebo reference="U_base_wheel_1_joint">
+      <surface>
+          <friction>
+              <ode>
+                  <mu>0.001</mu>
+                  <mu2>0.001</mu2>
+              </ode>
+          </friction>
+      </surface>
+  </gazebo>
+
+  <gazebo reference="U_wheel_1_joint">
+    <surface>
+        <friction>
+            <ode>
+                <mu>0.2</mu>
+                <mu2>0.2</mu2>
+            </ode>
+        </friction>
+    </surface>
+</gazebo>
+
+
+<gazebo reference="U_base_wheel_2_joint">
+  <surface>
+      <friction>
+          <ode>
+              <mu>0.001</mu>
+              <mu2>0.001</mu2>
+          </ode>
+      </friction>
+  </surface>
+</gazebo>
+
+<gazebo reference="U_wheel_2_joint">
+<surface>
+    <friction>
+        <ode>
+            <mu>0.2</mu>
+            <mu2>0.2</mu2>
+        </ode>
+    </friction>
+</surface>
+</gazebo>
 
 
     <!-- Define plugins -->
