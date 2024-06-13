@@ -13,36 +13,39 @@ def generate_launch_description():
     pkg_name = 'robot_pkg'
     file_subpath = 'urdf/TTR01.urdf.xacro'
 
-
     # Use xacro to process the file
-    xacro_file = os.path.join(get_package_share_directory(pkg_name),file_subpath)
+    xacro_file = os.path.join(get_package_share_directory(pkg_name), file_subpath)
     robot_description_raw = xacro.process_file(xacro_file).toxml()
-
 
     # Configure the node
     node_robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[{'robot_description': robot_description_raw,
-        'use_sim_time': True}] # add other parameters here if required
+        parameters=[{
+            'robot_description': robot_description_raw,
+            'use_sim_time': True
+        }]  # add other parameters here if required
     )
 
-
+    # Include the Gazebo launch file
     gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([os.path.join(
-            get_package_share_directory('gazebo_ros'), 'launch'), '/gazebo.launch.py']),
-        )
+        PythonLaunchDescriptionSource([
+            os.path.join(
+                get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py'
+            )
+        ]),
+    )
 
+    # Configure the spawn_entity node
+    spawn_entity = Node(
+        package='gazebo_ros',
+        executable='spawn_entity.py',
+        arguments=['-topic', 'robot_description', '-entity', 'TTR01'],
+        output='screen'
+    )
 
-    spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
-                    arguments=['-topic', 'robot_description',
-                                '-entity', 'TTR01'],
-                    output='screen')
-
-
-
-    # Run the node
+    # Run the nodes
     return LaunchDescription([
         gazebo,
         node_robot_state_publisher,
