@@ -2,9 +2,9 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="TTR01">
 
-    <!--base/world frame-->
     <xacro:include filename="robot_parameters.xacro"/>
 
+    <!--base/world frame-->
     <link name="base_link"> </link>
 
 
@@ -49,7 +49,7 @@
 
     <!--Left wheel frame-->
     <joint name="L_wheel_joint" type="continuous">
-        <origin xyz="0 -0.10575 -0.0225" rpy="${-pi/2} ${-pi/2} ${pi}"/>
+        <origin xyz="0 -0.10575 -0.02356" rpy="${pi/2} ${pi/2} 0"/>
 
         <parent link="B_base_link"/>
         <child link="L_wheel_link"/>    
@@ -88,7 +88,7 @@
 
     <!--Right wheel frame-->
     <joint name="R_wheel_joint" type="continuous">
-        <origin xyz="0 0.10575 -0.0225" rpy="${-pi/2} ${pi/2} 0"/>
+        <origin xyz="0 0.10575 -0.02356" rpy="${-pi/2} ${pi/2} 0"/>
 
         <parent link="B_base_link"/>
         <child link="R_wheel_link"/>    
@@ -128,17 +128,16 @@
 
         <parent link="B_base_link"/>
         <child link="U_base_wheel_1_link"/>    
-        <axis xyz="0 0 -1"/>
-        <limit effort="0" velocity="0" />    
+        <axis xyz="0 0 1"/>
     </joint>
 
     <xacro:property name="U_base_box_X" value="0.028"/>
     <xacro:property name="U_base_box_Y" value="0.032"/>
-    <xacro:property name="U_base_box_Z" value="0.045"/>
+    <xacro:property name="U_base_box_Z" value="0.03902"/>
 
     <link name="U_base_wheel_1_link">
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 -0.00329" rpy="0 0 0"/>
 
             <geometry>    
                 <box size="${U_base_box_X} ${U_base_box_Y} ${U_base_box_Z}"/>
@@ -148,7 +147,7 @@
         </visual>
 
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 -0.00329" rpy="0 0 0"/>
 
             <geometry>    
                 <box size="${U_base_box_X} ${U_base_box_Y} ${U_base_box_Z}"/>
@@ -168,8 +167,7 @@
 
         <parent link="U_base_wheel_1_link"/>
         <child link="U_wheel_1_link"/>    
-        <axis xyz="0 0 1"/>
-        <limit effort="0" velocity="0" />    
+        <axis xyz="0 0 1"/>   
     </joint>
 
     <xacro:property name="U_wheel_thickness" value="0.0144"/>
@@ -207,13 +205,13 @@
 
         <parent link="B_base_link"/>
         <child link="U_base_wheel_2_link"/>    
-        <axis xyz="0 0 -1"/>
+        <axis xyz="0 0 1"/>
         <limit effort="0" velocity="0" />    
     </joint>
 
     <link name="U_base_wheel_2_link">
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 -0.00329" rpy="0 0 0"/>
 
             <geometry>    
                 <box size="${U_base_box_X} ${U_base_box_Y} ${U_base_box_Z}"/>
@@ -223,7 +221,7 @@
         </visual>
 
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <origin xyz="0 0 -0.00329" rpy="0 0 0"/>
 
             <geometry>    
                 <box size="${U_base_box_X} ${U_base_box_Y} ${U_base_box_Z}"/>
