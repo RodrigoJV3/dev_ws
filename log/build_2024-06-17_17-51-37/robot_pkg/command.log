@@ -1,0 +1,6 @@
+Invoking command in '/home/dev-pc/dev_ws/build/robot_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dev-pc/dev_ws/src/robot_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev-pc/dev_ws/install/robot_pkg
+Invoked command in '/home/dev-pc/dev_ws/build/robot_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/dev-pc/dev_ws/src/robot_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev-pc/dev_ws/install/robot_pkg
+Invoking command in '/home/dev-pc/dev_ws/build/robot_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dev-pc/dev_ws/build/robot_pkg -- -j8 -l8
+Invoked command in '/home/dev-pc/dev_ws/build/robot_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/dev-pc/dev_ws/build/robot_pkg -- -j8 -l8
+Invoking command in '/home/dev-pc/dev_ws/build/robot_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dev-pc/dev_ws/build/robot_pkg
+Invoked command in '/home/dev-pc/dev_ws/build/robot_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/dev-pc/dev_ws/build/robot_pkg

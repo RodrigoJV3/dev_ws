@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="TTR01">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <!-- Define materials for links -->
     <gazebo reference="base_link">
@@ -41,8 +41,8 @@
         <surface>
             <friction>
                 <ode>
-                    <mu>1.0</mu> <!-- Fricción estática -->
-                    <mu2>0.8</mu2> <!-- Fricción dinámica -->
+                    <mu>1.0</mu>
+                    <mu2>0.8</mu2>
                 </ode>
             </friction>
         </surface>
@@ -107,7 +107,7 @@
 </gazebo>
 
 
-    <!-- Define plugins -->
+    <!-- Define joints & joint states -->
     <gazebo>
         <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
             <update_rate>20</update_rate>
@@ -130,13 +130,27 @@
 
     <!-- Differential drive plugin for moving the robot -->
     <gazebo>
-        <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+        <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
+    
+            <!-- Wheel Information -->
             <update_rate>50</update_rate>
             <left_joint>L_wheel_joint</left_joint>
             <right_joint>R_wheel_joint</right_joint>
             <wheel_separation>0.2115</wheel_separation> <!-- Adjust according to your robot -->
             <wheel_diameter>0.065</wheel_diameter> <!-- Adjust according to your wheels -->
+
+            <!-- Limits -->
+            <max_wheel_torque>0.5</max_wheel_torque>
+            <max_wheel_acceleration>43.15</max_wheel_acceleration>
+    
+            <!-- Output -->
+            <odometry_frame>odom</odometry_frame>
             <robot_base_frame>base_link</robot_base_frame>
+
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+    
         </plugin>
     </gazebo>
 

@@ -22,13 +22,6 @@ def generate_launch_description():
         parameters=[{'robot_description': robot_description_raw}]
     )
 
-    rviz_node = launch_ros.actions.Node(
-        package='rviz2',
-        executable='rviz2',
-        name='rviz2',
-        output='screen'
-    )
-
     joint_state_publisher_gui_node = Node(
         package='joint_state_publisher_gui',
         executable='joint_state_publisher_gui',
@@ -39,6 +32,5 @@ def generate_launch_description():
     # Run the nodes
     return LaunchDescription([
         node_robot_state_publisher,
-        rviz_node,
         joint_state_publisher_gui_node
     ])
