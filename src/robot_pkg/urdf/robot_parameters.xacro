@@ -27,6 +27,37 @@
         <color rgba="0 0 0 1"/>
     </material>
 
+
+    <!--Measures-->
+    <xacro:property name="B_base_length" value="0.005"/>
+    <xacro:property name="B_base_radius" value="0.089"/>
+
+    <xacro:property name="wheel_thickness" value="0.027"/>
+    <xacro:property name="wheel_radius" value="0.0325"/>
+
+    <xacro:property name="U_base_box_X" value="0.028"/>
+    <xacro:property name="U_base_box_Y" value="0.032"/>
+    <xacro:property name="U_base_box_Z" value="0.03902"/>
+
+    <xacro:property name="U_wheel_thickness" value="0.0144"/>
+    <xacro:property name="U_wheel_radius" value="0.0115"/>
+
+    <xacro:property name="Support_length" value="0.101"/>
+    <xacro:property name="Support_radius" value="0.070"/>
+
+
+    <!--Mass-->
+    <xacro:property name="B_base_mass" value="1.0"/>
+
+    <xacro:property name="wheel_mass" value="0.120"/>    
+
+    <xacro:property name="U_base_mass" value="0.05"/> 
+
+    <xacro:property name="U_wheel_mass" value="0.01"/>
+
+    <xacro:property name="Support_mass" value="1.0"/>
+
+
     <!-- Standard inertial calculations https://en.wikipedia.org/wiki/List_of_moments_of_inertia -->
 
     <xacro:macro name="inertial_sphere" params="mass radius *origin">
@@ -45,7 +76,7 @@
             <xacro:insert_block name="origin"/>
             <mass value="${mass}" />
             <inertia ixx="${(1/12) * mass * (y*y+z*z)}" ixy="0.0" ixz="0.0"
-                    iyy="${(1/12) * mass * (x*x+z*z)}" iyz="0.0"
+                    iyy="${(1/12) * mass * (z*z+x*x)}" iyz="0.0"
                     izz="${(1/12) * mass * (x*x+y*y)}" />
         </inertial>
     </xacro:macro>
