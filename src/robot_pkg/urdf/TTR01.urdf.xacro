@@ -5,5 +5,6 @@
     <xacro:include filename="robot_parameters.xacro"/>
     <xacro:include filename="robot.xacro"/>
     <xacro:include filename="gazebo_setup.xacro"/>
+    <xacro:include filename="lidar.xacro"/>
 
 </robot>

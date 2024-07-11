@@ -35,6 +35,10 @@
       <material>Gazebo/White</material>
     </gazebo>
 
+    <gazebo reference="Lidar_base_link">
+      <material>Gazebo/White</material>
+    </gazebo>
+
 
     <!-- Define friction for wheels -->
     <gazebo reference="L_wheel_link">
@@ -118,6 +122,7 @@
             <joint_name>U_wheel_1_joint</joint_name>
             <joint_name>U_base_wheel_2_joint</joint_name>
             <joint_name>U_wheel_2_joint</joint_name>
+             <joint_name>Lidar_motor_joint</joint_name>
         </plugin>
     </gazebo>
 

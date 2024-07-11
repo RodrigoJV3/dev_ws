@@ -45,6 +45,12 @@
     <xacro:property name="Support_length" value="0.101"/>
     <xacro:property name="Support_radius" value="0.070"/>
 
+    <xacro:property name="Lidar_base_X" value="0.10457"/>
+    <xacro:property name="Lidar_base_Y" value="0.0787"/>
+    <xacro:property name="Lidar_base_Z" value="0.0305"/>
+
+    <xacro:property name="Lidar_motor_length" value="0.0245"/>
+    <xacro:property name="Lidar_motor_radius" value="0.035"/>
 
     <!--Mass-->
     <xacro:property name="B_base_mass" value="1.0"/>
@@ -56,6 +62,10 @@
     <xacro:property name="U_wheel_mass" value="0.01"/>
 
     <xacro:property name="Support_mass" value="1.0"/>
+
+    <xacro:property name="Lidar_base_mass" value="0.1"/>
+
+    <xacro:property name="Lidar_motor_mass" value="0.1"/>
 
 
     <!-- Standard inertial calculations https://en.wikipedia.org/wiki/List_of_moments_of_inertia -->

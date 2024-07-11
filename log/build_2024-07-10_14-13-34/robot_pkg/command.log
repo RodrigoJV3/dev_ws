@@ -1,0 +1,4 @@
+Invoking command in '/home/dev-pc/dev_ws/build/robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev-pc/serial_motor_demo/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --build /home/dev-pc/dev_ws/build/robot_pkg -- -j8 -l8
+Invoked command in '/home/dev-pc/dev_ws/build/robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev-pc/serial_motor_demo/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --build /home/dev-pc/dev_ws/build/robot_pkg -- -j8 -l8
+Invoking command in '/home/dev-pc/dev_ws/build/robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev-pc/serial_motor_demo/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --install /home/dev-pc/dev_ws/build/robot_pkg
+Invoked command in '/home/dev-pc/dev_ws/build/robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dev-pc/serial_motor_demo/install/serial_motor_demo:/opt/ros/humble /usr/bin/cmake --install /home/dev-pc/dev_ws/build/robot_pkg
