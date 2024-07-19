@@ -5,7 +5,7 @@
     <joint name="Lidar_base_joint" type="fixed">
         <origin xyz="0 0 0.0305" rpy="0 0 0"/>
 
-        <parent link="Support_link"/>
+        <parent link="T_base_link"/>
         <child link="Lidar_base_link"/>        
     </joint>
 
@@ -71,7 +71,7 @@
     <gazebo reference="Lidar_motor_link">
         <sensor name="laser" type="ray">
             <pose> 0 0 0 0 0 0 </pose>
-            <visualize> true </visualize>
+            <visualize> false </visualize>
             <upadet_rate> 10 </upadet_rate>
             <ray>
                 <scan>

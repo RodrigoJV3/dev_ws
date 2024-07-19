@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-    <!--base/world frame-->
+    <!--base/world-->
     <link name="base_link"> </link>
 
 
-    <!--Bottom base frame-->
+    <!--Bottom base-->
     <joint name="B_base_joint" type="fixed">
-        <origin xyz="0 0 0.05606" rpy="0 0 0"/>
+        <origin xyz="0 0 0.0225" rpy="0 0 0"/>
 
         <parent link="base_link"/>
         <child link="B_base_link"/>        
@@ -41,13 +41,13 @@
     </link>
 
 
-    <!--Left wheel frame-->
+    <!--Left wheel-->
     <joint name="L_wheel_joint" type="continuous">
         <origin xyz="0 -0.10575 -0.02356" rpy="${pi/2} ${pi/2} 0"/>
 
         <parent link="B_base_link"/>
         <child link="L_wheel_link"/>    
-        <axis xyz="0 0 1"/>
+        <axis xyz="0 0 -1"/>
         <limit effort="0.323" velocity="10.47" />    
     </joint>
 
@@ -77,13 +77,13 @@
     </link>
 
 
-    <!--Right wheel frame-->
+    <!--Right wheel-->
     <joint name="R_wheel_joint" type="continuous">
         <origin xyz="0 0.10575 -0.02356" rpy="${-pi/2} ${pi/2} 0"/>
 
         <parent link="B_base_link"/>
         <child link="R_wheel_link"/>    
-        <axis xyz="0 0 -1"/>
+        <axis xyz="0 0 1"/>
         <limit effort="0.323" velocity="10.47" />    
     </joint>
 
@@ -154,7 +154,7 @@
 
         <parent link="U_base_wheel_1_link"/>
         <child link="U_wheel_1_link"/>    
-        <axis xyz="0 0 1"/>   
+        <axis xyz="0 0 -1"/>   
     </joint>
 
     <link name="U_wheel_1_link">
@@ -189,7 +189,7 @@
 
         <parent link="B_base_link"/>
         <child link="U_base_wheel_2_link"/>    
-        <axis xyz="0 0 1"/>
+        <axis xyz="0 0 -1"/>
     </joint>
 
     <link name="U_base_wheel_2_link">
@@ -224,7 +224,7 @@
 
         <parent link="U_base_wheel_2_link"/>
         <child link="U_wheel_2_link"/>    
-        <axis xyz="0 0 -1"/>  
+        <axis xyz="0 0 1"/>  
     </joint>
 
     <link name="U_wheel_2_link">
@@ -253,35 +253,137 @@
     </link>
 
 
-    <!--Fixed support-->
-    <joint name="Support_joint" type="fixed">
-        <origin xyz="0 0 0.101" rpy="0 0 0"/>
+    <!--Support A-->
+    <joint name="Support_A_joint" type="fixed">
+        <origin xyz="0 0 0.02" rpy="0 0 0"/>
 
         <parent link="B_base_link"/>
-        <child link="Support_link"/>        
+        <child link="Support_A_link"/>    
     </joint>
 
-    <link name="Support_link">
+    <link name="Support_A_link">
         <visual>
-            <origin xyz="0 0 -${Support_length/2}" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
 
             <geometry>    
-                <cylinder length="${Support_length}" radius="${Support_radius}"/>
+                <box size="${Support_AX} ${Support_AY} ${Support_AZ}"/>
             </geometry>
 
             <material name="white"/>
         </visual>
 
         <collision>
-            <origin xyz="0 0 -${Support_length/2}" rpy="0 0 0"/>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
 
-            <geometry>          
-                <cylinder length="${Support_length}" radius="${Support_radius}"/>
+            <geometry>    
+                <box size="${Support_AX} ${Support_AY} ${Support_AZ}"/>
             </geometry>
         </collision>
 
-        <xacro:inertial_cylinder mass="${Support_mass}" length="${Support_length}" radius="${Support_radius}">
-            <origin xyz="0 0 -${Support_length/2}" rpy="0 0 0"/>
+        <xacro:inertial_box mass="${Support_A_mass}" x="${Support_AX}" y="${Support_AY}" z="${Support_AZ}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+        </xacro:inertial_box>
+    </link>
+
+
+    <!--Middle base-->
+    <joint name="M_base_joint" type="fixed">
+        <origin xyz="0 0 0.025" rpy="0 0 0"/>
+
+        <parent link="Support_A_link"/>
+        <child link="M_base_link"/>        
+    </joint>
+
+    <link name="M_base_link">
+        <visual>
+            <origin xyz="0 0 -${MT_length/2}" rpy="0 0 0"/>
+
+            <geometry>    
+                <cylinder length="${MT_length}" radius="${MT_radius}"/>
+            </geometry>
+
+            <material name="black"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 -${MT_length/2}" rpy="0 0 0"/>
+
+            <geometry>          
+                <cylinder length="${MT_length}" radius="${MT_radius}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_cylinder mass="${MT_mass}" length="${MT_length}" radius="${MT_radius}">
+            <origin xyz="0 0 -${MT_length/2}" rpy="0 0 0"/>
+
+        </xacro:inertial_cylinder>
+    </link>
+
+
+    <!--Support B-->
+    <joint name="Support_B_joint" type="fixed">
+        <origin xyz="0 0 0.0255" rpy="0 0 0"/>
+
+        <parent link="M_base_link"/>
+        <child link="Support_B_link"/>    
+    </joint>
+
+    <link name="Support_B_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <box size="${Support_BX} ${Support_BY} ${Support_BZ}"/>
+            </geometry>
+
+            <material name="white"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+            <geometry>    
+                <box size="${Support_BX} ${Support_BY} ${Support_BZ}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_box mass="${Support_B_mass}" x="${Support_BX}" y="${Support_BY}" z="${Support_AZ}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+
+        </xacro:inertial_box>
+    </link>
+
+
+    <!--Top base-->
+    <joint name="T_base_joint" type="fixed">
+        <origin xyz="0 0 0.0305" rpy="0 0 0"/>
+
+        <parent link="Support_B_link"/>
+        <child link="T_base_link"/>        
+    </joint>
+
+    <link name="T_base_link">
+        <visual>
+            <origin xyz="0 0 -${MT_length/2}" rpy="0 0 0"/>
+
+            <geometry>    
+                <cylinder length="${MT_length}" radius="${MT_radius}"/>
+            </geometry>
+
+            <material name="white"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 -${MT_length/2}" rpy="0 0 0"/>
+
+            <geometry>          
+                <cylinder length="${MT_length}" radius="${MT_radius}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_cylinder mass="${MT_mass}" length="${MT_length}" radius="${MT_radius}">
+            <origin xyz="0 0 -${MT_length/2}" rpy="0 0 0"/>
 
         </xacro:inertial_cylinder>
     </link>

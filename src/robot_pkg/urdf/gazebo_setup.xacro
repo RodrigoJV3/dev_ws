@@ -31,13 +31,33 @@
       <material>Gazebo/White</material>
     </gazebo>
 
-    <gazebo reference="Support_link">
+    <gazebo reference="Support_A_link">
+      <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="M_base_link">
+      <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="Support_B_link">
+      <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="T_base_link">
       <material>Gazebo/White</material>
     </gazebo>
 
     <gazebo reference="Lidar_base_link">
       <material>Gazebo/White</material>
     </gazebo>
+  
+    <gazebo reference="Camera_base_link">
+      <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="Camera_link">
+      <material>Gazebo/Green</material>
+    </gazebo>    
 
 
     <!-- Define friction for wheels -->

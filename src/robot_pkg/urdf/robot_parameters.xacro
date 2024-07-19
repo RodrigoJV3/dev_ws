@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
 
-    <!-- colors -->
+    <!-- Colors -->
     <material name="white">
         <color rgba="1 1 1 1"/>
     </material>
@@ -13,6 +13,10 @@
 
     <material name="blue">
         <color rgba="0.2 0.2 1 1"/>
+    </material>
+
+    <material name="green">
+        <color rgba="0 0.8 0.1 1"/>
     </material>
 
     <material name="light_gray">
@@ -32,18 +36,26 @@
     <xacro:property name="B_base_length" value="0.005"/>
     <xacro:property name="B_base_radius" value="0.089"/>
 
+    <xacro:property name="MT_length" value="0.005"/>
+    <xacro:property name="MT_radius" value="0.070"/>
+
+    <xacro:property name="Support_AX" value="0.07571"/>
+    <xacro:property name="Support_AY" value="0.07648"/>
+    <xacro:property name="Support_AZ" value="0.04"/>
+
+    <xacro:property name="Support_BX" value="0.07571"/>
+    <xacro:property name="Support_BY" value="0.07648"/>
+    <xacro:property name="Support_BZ" value="0.051"/>
+
     <xacro:property name="wheel_thickness" value="0.027"/>
     <xacro:property name="wheel_radius" value="0.0325"/>
 
-    <xacro:property name="U_base_box_X" value="0.028"/>
-    <xacro:property name="U_base_box_Y" value="0.032"/>
+    <xacro:property name="U_base_box_X" value="0.032"/>
+    <xacro:property name="U_base_box_Y" value="0.038"/>
     <xacro:property name="U_base_box_Z" value="0.03902"/>
 
     <xacro:property name="U_wheel_thickness" value="0.0144"/>
     <xacro:property name="U_wheel_radius" value="0.0115"/>
-
-    <xacro:property name="Support_length" value="0.101"/>
-    <xacro:property name="Support_radius" value="0.070"/>
 
     <xacro:property name="Lidar_base_X" value="0.10457"/>
     <xacro:property name="Lidar_base_Y" value="0.0787"/>
@@ -52,8 +64,24 @@
     <xacro:property name="Lidar_motor_length" value="0.0245"/>
     <xacro:property name="Lidar_motor_radius" value="0.035"/>
 
+    <xacro:property name="Camera_base_X" value="0.0265"/>
+    <xacro:property name="Camera_base_Y" value="0.0335"/>
+    <xacro:property name="Camera_base_Z" value="0.01878"/>
+
+    <xacro:property name="Camera_X" value="0.00112"/>
+    <xacro:property name="Camera_Y" value="0.0246"/>
+    <xacro:property name="Camera_Z" value="0.024"/>
+
+
+
     <!--Mass-->
-    <xacro:property name="B_base_mass" value="1.0"/>
+    <xacro:property name="B_base_mass" value="0.08"/>
+
+    <xacro:property name="MT_mass" value="0.04"/>
+
+    <xacro:property name="Support_A_mass" value="0.3"/>
+
+    <xacro:property name="Support_B_mass" value="0.5"/>
 
     <xacro:property name="wheel_mass" value="0.120"/>    
 
@@ -61,12 +89,13 @@
 
     <xacro:property name="U_wheel_mass" value="0.01"/>
 
-    <xacro:property name="Support_mass" value="1.0"/>
-
     <xacro:property name="Lidar_base_mass" value="0.1"/>
 
     <xacro:property name="Lidar_motor_mass" value="0.1"/>
 
+    <xacro:property name="Camera_base_mass" value="0.025"/>
+
+    <xacro:property name="Camera_mass" value="0.01"/>
 
     <!-- Standard inertial calculations https://en.wikipedia.org/wiki/List_of_moments_of_inertia -->
 
