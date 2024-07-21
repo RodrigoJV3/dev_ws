@@ -5,9 +5,9 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     channel_type = 'serial'
-    serial_port = '/dev/serial/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.3:1.0-port0'
+    serial_port = '/dev/serial/by-path/platform-fd500000.pcie-pci-0000:01:00.0-usb-0:1.4:1.0-port0'
     serial_baudrate = 115200
-    frame_id = 'lidar_motor_link'
+    frame_id = 'Lidar_motor_link'
     inverted = False
     angle_compensate = True
     scan_mode = 'Sensitivity'
