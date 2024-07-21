@@ -1,1 +1,0 @@
-/home/dev-pc/dev_ws/src/sllidar_ros2/launch/sllidar_c1_launch.py

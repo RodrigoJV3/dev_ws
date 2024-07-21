@@ -1,1 +1,1 @@
-/home/dev-pc/dev_ws/src/robot_pkg/launch/display.launch.py
+/home/rodrigo/dev_ws/src/robot_pkg/launch/display.launch.py
