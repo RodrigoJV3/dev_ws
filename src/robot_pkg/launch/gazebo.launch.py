@@ -25,7 +25,7 @@ def generate_launch_description():
         parameters=[{
             'robot_description': robot_description_raw,
             'use_sim_time': True
-        }]  # add other parameters here if required
+        }] 
     )
 
     # Include the Gazebo launch file
@@ -45,9 +45,26 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Configure the ros2_control node
+    diff_drive_spawner = Node(
+        package="controller_manager",
+        executable="spawner.py",
+        arguments=["diff_cont"],
+    )
+
+    joint_broad_spawner = Node(
+        package="controller_manager",
+        executable="spawner.py",
+        arguments=["joint_broad"],
+    )
+
     # Run the nodes
     return LaunchDescription([
         gazebo,
         node_robot_state_publisher,
-        spawn_entity
+        spawn_entity,
+        diff_drive_spawner,
+        joint_broad_spawner
     ])
+
+#ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped

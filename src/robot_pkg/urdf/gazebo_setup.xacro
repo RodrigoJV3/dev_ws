@@ -152,31 +152,4 @@
         </plugin>
     </gazebo>
 
-
-    <!-- Differential drive plugin for moving the robot -->
-    <gazebo>
-        <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
-    
-            <!-- Wheel Information -->
-            <update_rate>50</update_rate>
-            <left_joint>L_wheel_joint</left_joint>
-            <right_joint>R_wheel_joint</right_joint>
-            <wheel_separation>0.2115</wheel_separation> <!-- Adjust according to your robot -->
-            <wheel_diameter>0.065</wheel_diameter> <!-- Adjust according to your wheels -->
-
-            <!-- Limits -->
-            <max_wheel_torque>0.5</max_wheel_torque>
-            <max_wheel_acceleration>10.47</max_wheel_acceleration>
-    
-            <!-- Output -->
-            <odometry_frame>odom</odometry_frame>
-            <robot_base_frame>base_link</robot_base_frame>
-
-            <publish_odom>true</publish_odom>
-            <publish_odom_tf>true</publish_odom_tf>
-            <publish_wheel_tf>true</publish_wheel_tf>
-    
-        </plugin>
-    </gazebo>
-
 </robot>

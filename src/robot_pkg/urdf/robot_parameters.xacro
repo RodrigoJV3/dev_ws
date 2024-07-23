@@ -97,8 +97,7 @@
 
     <xacro:property name="Camera_mass" value="0.01"/>
 
-    <!-- Standard inertial calculations https://en.wikipedia.org/wiki/List_of_moments_of_inertia -->
-
+    <!-- Standard inertial calculations -->
     <xacro:macro name="inertial_sphere" params="mass radius *origin">
         <inertial>
             <xacro:insert_block name="origin"/>

@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/rodrigo/dev_ws/install/robot_pkg/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/dev-pc/dev_ws/install/robot_pkg/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/rodrigo/dev_ws/install/robot_pkg/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/dev-pc/dev_ws/install/robot_pkg/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/rodrigo/dev_ws/install/robot_pkg/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/dev-pc/dev_ws/install/robot_pkg/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/rodrigo/dev_ws/install/robot_pkg/${destination}")
+      set(destination "/home/dev-pc/dev_ws/install/robot_pkg/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,47 +310,47 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "urdf" "config" "DESTINATION" "share/robot_pkg")
-ament_cmake_symlink_install_directory("/home/rodrigo/dev_ws/src/robot_pkg" DIRECTORY "launch" "urdf" "config" "DESTINATION" "share/robot_pkg")
+# install(DIRECTORY "launch" "urdf" "config" "rviz2" "DESTINATION" "share/robot_pkg")
+ament_cmake_symlink_install_directory("/home/dev-pc/dev_ws/src/robot_pkg" DIRECTORY "launch" "urdf" "config" "rviz2" "DESTINATION" "share/robot_pkg")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_pkg" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/robot_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/robot_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/robot_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/robot_pkg" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/robot_pkg/environment")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/robot_pkg/environment")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/robot_pkg/environment")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/robot_pkg/environment")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/robot_pkg/environment")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/robot_pkg/environment")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/robot_pkg/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/robot_pkg/environment")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/robot_pkg/environment")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/robot_pkg/environment")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/robot_pkg/environment")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/robot_pkg/environment")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/robot_pkg/environment")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/robot_pkg/environment")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/robot_pkg")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/robot_pkg")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/robot_pkg")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/robot_pkg")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/robot_pkg")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/robot_pkg")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/robot_pkg")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/robot_pkg")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/robot_pkg")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/robot_pkg")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/robot_pkg")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/robot_pkg")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/robot_pkg")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/robot_pkg")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/robot_pkg")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/robot_pkg")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/robot_pkg")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/robot_pkg")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/robot_pkg")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/robot_pkg")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/packages/robot_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/packages/robot_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/packages/robot_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_index/share/ament_index/resource_index/packages/robot_pkg" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_core/robot_pkgConfig.cmake" "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_core/robot_pkgConfig-version.cmake" "DESTINATION" "share/robot_pkg/cmake")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_core/robot_pkgConfig.cmake" "/home/rodrigo/dev_ws/build/robot_pkg/ament_cmake_core/robot_pkgConfig-version.cmake" "DESTINATION" "share/robot_pkg/cmake")
+# install(FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_core/robot_pkgConfig.cmake" "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_core/robot_pkgConfig-version.cmake" "DESTINATION" "share/robot_pkg/cmake")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_core/robot_pkgConfig.cmake" "/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_core/robot_pkgConfig-version.cmake" "DESTINATION" "share/robot_pkg/cmake")
 
-# install(FILES "/home/rodrigo/dev_ws/src/robot_pkg/package.xml" "DESTINATION" "share/robot_pkg")
-ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/robot_pkg" FILES "/home/rodrigo/dev_ws/src/robot_pkg/package.xml" "DESTINATION" "share/robot_pkg")
+# install(FILES "/home/dev-pc/dev_ws/src/robot_pkg/package.xml" "DESTINATION" "share/robot_pkg")
+ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/robot_pkg" FILES "/home/dev-pc/dev_ws/src/robot_pkg/package.xml" "DESTINATION" "share/robot_pkg")

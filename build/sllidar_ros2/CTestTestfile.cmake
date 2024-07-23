@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/rodrigo/dev_ws/src/sllidar_ros2
-# Build directory: /home/rodrigo/dev_ws/build/sllidar_ros2
+# Source directory: /home/dev-pc/dev_ws/src/sllidar_ros2
+# Build directory: /home/dev-pc/dev_ws/build/sllidar_ros2
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -68,6 +68,8 @@
         </xacro:inertial_cylinder>
     </link>
 
+
+    <!-- Gazebo lidar setup -->
     <gazebo reference="Lidar_motor_link">
         <sensor name="laser" type="ray">
             <pose> 0 0 0 0 0 0 </pose>

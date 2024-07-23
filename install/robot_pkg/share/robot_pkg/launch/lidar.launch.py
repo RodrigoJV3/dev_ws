@@ -1,1 +1,1 @@
-/home/rodrigo/dev_ws/src/robot_pkg/launch/lidar.launch.py
+/home/dev-pc/dev_ws/src/robot_pkg/launch/lidar.launch.py
