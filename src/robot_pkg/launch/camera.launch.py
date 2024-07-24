@@ -6,9 +6,9 @@ from launch_ros.actions import Node
 def generate_launch_description():
     return LaunchDescription([
 
-        #v4l2 parameters
+        # v4l2 parameters
 
-        #Resolution & CODEC
+        # Resolution & CODEC
         ExecuteProcess(
             cmd=['v4l2-ctl', '--set-fmt-video=width=320,height=240,pixelformat=YUYV'],
             shell=True,
@@ -16,7 +16,7 @@ def generate_launch_description():
             name='v4l2_set_fmt_video'
         ),
         
-        #FPS
+        # FPS
         ExecuteProcess(
             cmd=['v4l2-ctl', '--set-parm=10'],
             shell=True,
@@ -24,7 +24,7 @@ def generate_launch_description():
             name='v4l2_set_parm'
         ),
         
-        #Bitrate
+        # Bitrate
         ExecuteProcess(
             cmd=['v4l2-ctl', '--set-ctrl=video_bitrate=5000000'],
             shell=True,
@@ -32,7 +32,7 @@ def generate_launch_description():
             name='v4l2_set_ctrl'
         ),
 
-        #Image transport node with https://index.ros.org/p/ffmpeg_image_transport/github-ros-misc-utilities-ffmpeg_image_transport/#humble
+        # Image transport node with https://index.ros.org/p/ffmpeg_image_transport/github-ros-misc-utilities-ffmpeg_image_transport/#humble
         Node(
             package='image_transport',
             executable='republish',
@@ -44,7 +44,7 @@ def generate_launch_description():
             ],
         ),
         
-        #v4l2 node from https://index.ros.org/r/v4l2_camera/
+        # v4l2 node from https://index.ros.org/r/v4l2_camera/
         Node(
             package='v4l2_camera',
             executable='v4l2_camera_node',

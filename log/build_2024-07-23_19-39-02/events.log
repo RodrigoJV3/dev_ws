@@ -1,0 +1,482 @@
+[0.000000] (-) TimerEvent: {}
+[0.001143] (robot_pkg) JobQueued: {'identifier': 'robot_pkg', 'dependencies': OrderedDict()}
+[0.002557] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.003667] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.004384] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/rodrigo/dev_ws/install/serial')])}
+[0.004763] (serial) JobStarted: {'identifier': 'serial'}
+[0.045086] (robot_pkg) JobStarted: {'identifier': 'robot_pkg'}
+[0.069458] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[0.099286] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.099550] (-) TimerEvent: {}
+[0.103086] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[0.105835] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rodrigo/dev_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/rodrigo/dev_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'rodrigo'), ('SSH_CLIENT', '192.168.1.113 46662 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib:/home/rodrigo/dev_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rodrigo'), ('OLDPWD', '/home/rodrigo/dev_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/rodrigo/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rodrigo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rodrigo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'es_ES.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/rodrigo/dev_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.113 46662 192.168.1.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble')]), 'shell': False}
+[0.120793] (robot_pkg) JobProgress: {'identifier': 'robot_pkg', 'progress': 'cmake'}
+[0.125283] (robot_pkg) JobProgress: {'identifier': 'robot_pkg', 'progress': 'build'}
+[0.126485] (robot_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rodrigo/dev_ws/build/robot_pkg', '--', '-j4', '-l4'], 'cwd': '/home/rodrigo/dev_ws/build/robot_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'rodrigo'), ('SSH_CLIENT', '192.168.1.113 46662 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib:/home/rodrigo/dev_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rodrigo'), ('OLDPWD', '/home/rodrigo/dev_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/rodrigo/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rodrigo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rodrigo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'es_ES.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/rodrigo/dev_ws/build/robot_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.113 46662 192.168.1.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble')]), 'shell': False}
+[0.145990] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[0.151980] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[0.153638] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rodrigo/dev_ws/build/sllidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/rodrigo/dev_ws/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'rodrigo'), ('SSH_CLIENT', '192.168.1.113 46662 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib:/home/rodrigo/dev_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rodrigo'), ('OLDPWD', '/home/rodrigo/dev_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/rodrigo/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rodrigo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rodrigo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'es_ES.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/rodrigo/dev_ws/build/sllidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.113 46662 192.168.1.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble')]), 'shell': False}
+[0.199987] (-) TimerEvent: {}
+[0.301691] (-) TimerEvent: {}
+[0.329079] (robot_pkg) CommandEnded: {'returncode': 0}
+[0.349364] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial\x1b[0m\n'}
+[0.351843] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest_main\x1b[0m\n'}
+[0.401932] (-) TimerEvent: {}
+[0.410321] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest\x1b[0m\n'}
+[0.443330] (serial) StdoutLine: {'line': b'[ 28%] Built target serial\n'}
+[0.445034] (sllidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sllidar_client\x1b[0m\n'}
+[0.479108] (sllidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sllidar_node\x1b[0m\n'}
+[0.502347] (-) TimerEvent: {}
+[0.536380] (serial) StdoutLine: {'line': b'[ 42%] Built target gtest_main\n'}
+[0.571672] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_example\x1b[0m\n'}
+[0.583668] (serial) StdoutLine: {'line': b'[ 57%] Built target gtest\n'}
+[0.592647] (robot_pkg) JobProgress: {'identifier': 'robot_pkg', 'progress': 'install'}
+[0.602591] (-) TimerEvent: {}
+[0.667719] (robot_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rodrigo/dev_ws/build/robot_pkg'], 'cwd': '/home/rodrigo/dev_ws/build/robot_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'rodrigo'), ('SSH_CLIENT', '192.168.1.113 46662 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib:/home/rodrigo/dev_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rodrigo'), ('OLDPWD', '/home/rodrigo/dev_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/rodrigo/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rodrigo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rodrigo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'es_ES.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/rodrigo/dev_ws/build/robot_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.113 46662 192.168.1.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble')]), 'shell': False}
+[0.670054] (serial) StdoutLine: {'line': b'[ 71%] Built target serial_example\n'}
+[0.684520] (sllidar_ros2) StdoutLine: {'line': b'[ 10%] Built target sllidar_client\n'}
+[0.702887] (-) TimerEvent: {}
+[0.715219] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial-test\x1b[0m\n'}
+[0.717752] (robot_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.719116] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial-test-timer\x1b[0m\n'}
+[0.720964] (robot_pkg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.723752] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/launch/camera.launch.py\n'}
+[0.724637] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/launch/display.launch.py\n'}
+[0.725578] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/launch/gazebo.launch.py\n'}
+[0.726445] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/launch/lidar.launch.py\n'}
+[0.728935] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/urdf/TTR01.urdf.xacro\n'}
+[0.730234] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/urdf/camera.xacro\n'}
+[0.731152] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/urdf/gazebo_control.xacro\n'}
+[0.732207] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/urdf/gazebo_setup.xacro\n'}
+[0.733137] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/urdf/lidar.xacro\n'}
+[0.734014] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/urdf/robot.xacro\n'}
+[0.735115] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/urdf/robot_parameters.xacro\n'}
+[0.736053] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/urdf/ros2_control.xacro\n'}
+[0.737954] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/config/controllers.yaml\n'}
+[0.739472] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/rviz2/default_robot.rviz\n'}
+[0.741262] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/ament_index/resource_index/package_run_dependencies/robot_pkg\n'}
+[0.743683] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/ament_index/resource_index/parent_prefix_path/robot_pkg\n'}
+[0.745652] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/environment/ament_prefix_path.sh\n'}
+[0.746992] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/environment/ament_prefix_path.dsv\n'}
+[0.748262] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/environment/path.sh\n'}
+[0.750004] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/environment/path.dsv\n'}
+[0.752087] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/local_setup.bash\n'}
+[0.754460] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/local_setup.sh\n'}
+[0.756948] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/local_setup.zsh\n'}
+[0.759535] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/local_setup.dsv\n'}
+[0.761948] (robot_pkg) StdoutLine: {'line': b'-- Symlinking: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.dsv\n'}
+[0.784881] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_node\n'}
+[0.803143] (-) TimerEvent: {}
+[0.814600] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/ament_index/resource_index/packages/robot_pkg\n'}
+[0.815721] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/cmake/robot_pkgConfig.cmake\n'}
+[0.816572] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/cmake/robot_pkgConfig-version.cmake\n'}
+[0.832883] (robot_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.xml\n'}
+[0.833744] (robot_pkg) CommandEnded: {'returncode': 0}
+[0.863771] (serial) StdoutLine: {'line': b'[ 85%] Built target serial-test-timer\n'}
+[0.886041] (serial) StdoutLine: {'line': b'[100%] Built target serial-test\n'}
+[0.904519] (-) TimerEvent: {}
+[0.937210] (serial) CommandEnded: {'returncode': 0}
+[0.942992] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[1.004752] (-) TimerEvent: {}
+[1.100455] (robot_pkg) JobEnded: {'identifier': 'robot_pkg', 'rc': 0}
+[1.104912] (-) TimerEvent: {}
+[1.156948] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[1.158301] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rodrigo/dev_ws/build/serial'], 'cwd': '/home/rodrigo/dev_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'rodrigo'), ('SSH_CLIENT', '192.168.1.113 46662 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib:/home/rodrigo/dev_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rodrigo'), ('OLDPWD', '/home/rodrigo/dev_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/rodrigo/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rodrigo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rodrigo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'es_ES.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/rodrigo/dev_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.113 46662 192.168.1.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble')]), 'shell': False}
+[1.187267] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.190446] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.192355] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/lib/libserial.a\n'}
+[1.193841] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/include/serial/serial.h\n'}
+[1.195276] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/include/serial/v8stdint.h\n'}
+[1.196056] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[1.197118] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[1.197859] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[1.199116] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[1.200084] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[1.201143] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[1.202220] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/path.sh\n'}
+[1.203247] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/path.dsv\n'}
+[1.204721] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/local_setup.bash\n'}
+[1.205385] (-) TimerEvent: {}
+[1.206872] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/local_setup.sh\n'}
+[1.207894] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/local_setup.zsh\n'}
+[1.209574] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/local_setup.dsv\n'}
+[1.210339] (serial) StdoutLine: {'line': b'-- Symlinking: /home/rodrigo/dev_ws/install/serial/share/serial/package.dsv\n'}
+[1.244926] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[1.251514] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.255429] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.259347] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[1.263794] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[1.266088] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/package.xml\n'}
+[1.266568] (serial) CommandEnded: {'returncode': 0}
+[1.305569] (-) TimerEvent: {}
+[1.370125] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'install'}
+[1.371245] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rodrigo/dev_ws/build/sllidar_ros2'], 'cwd': '/home/rodrigo/dev_ws/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'rodrigo'), ('SSH_CLIENT', '192.168.1.113 46662 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib:/home/rodrigo/dev_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rodrigo'), ('OLDPWD', '/home/rodrigo/dev_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/rodrigo/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rodrigo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rodrigo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'es_ES.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/rodrigo/dev_ws/build/sllidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.113 46662 192.168.1.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble')]), 'shell': False}
+[1.405795] (-) TimerEvent: {}
+[1.408575] (sllidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.411926] (sllidar_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.414878] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py\n'}
+[1.415623] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m12_launch .py\n'}
+[1.416389] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m7_launch.py\n'}
+[1.417376] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a2m8_launch.py\n'}
+[1.418220] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py\n'}
+[1.419483] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_c1_launch.py\n'}
+[1.420045] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py\n'}
+[1.420640] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py\n'}
+[1.421691] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py\n'}
+[1.422416] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py\n'}
+[1.423159] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s3_launch.py\n'}
+[1.423853] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py\n'}
+[1.424412] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py\n'}
+[1.426172] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m12_launch.py\n'}
+[1.427118] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m7_launch.py\n'}
+[1.427837] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a2m8_launch.py\n'}
+[1.428427] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py\n'}
+[1.428972] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_c1_launch.py\n'}
+[1.430002] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py\n'}
+[1.431473] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py\n'}
+[1.432273] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py\n'}
+[1.432933] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py\n'}
+[1.434759] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s3_launch.py\n'}
+[1.437530] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py\n'}
+[1.440292] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz\n'}
+[1.442175] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node\n'}
+[1.443957] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client\n'}
+[1.453593] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2\n'}
+[1.454328] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2\n'}
+[1.454973] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh\n'}
+[1.458976] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv\n'}
+[1.459676] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh\n'}
+[1.460148] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv\n'}
+[1.460528] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash\n'}
+[1.461594] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh\n'}
+[1.462550] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh\n'}
+[1.463010] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv\n'}
+[1.463327] (sllidar_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv\n'}
+[1.494922] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2\n'}
+[1.497059] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.499802] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.504135] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake\n'}
+[1.507346] (-) TimerEvent: {}
+[1.508372] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake\n'}
+[1.510622] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml\n'}
+[1.543042] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[1.548007] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[1.568154] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[1.608214] (-) TimerEvent: {}
+[1.610167] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[1.613829] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[1.615290] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rodrigo/dev_ws/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/rodrigo/dev_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'rodrigo'), ('SSH_CLIENT', '192.168.1.113 46662 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib:/home/rodrigo/dev_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rodrigo'), ('OLDPWD', '/home/rodrigo/dev_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/rodrigo/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rodrigo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rodrigo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'es_ES.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/rodrigo/dev_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.113 46662 192.168.1.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble')]), 'shell': False}
+[1.708573] (-) TimerEvent: {}
+[1.809525] (-) TimerEvent: {}
+[1.844364] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target diffdrive_arduino\x1b[0m\n'}
+[1.861183] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target fake_robot\x1b[0m\n'}
+[1.909745] (-) TimerEvent: {}
+[1.980258] (diffdrive_arduino) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o\x1b[0m\n'}
+[1.992117] (diffdrive_arduino) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/wheel.cpp.o\x1b[0m\n'}
+[1.997814] (diffdrive_arduino) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/wheel.cpp.o\x1b[0m\n'}
+[2.009983] (-) TimerEvent: {}
+[2.017064] (diffdrive_arduino) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o\x1b[0m\n'}
+[2.110189] (-) TimerEvent: {}
+[2.210994] (-) TimerEvent: {}
+[2.311766] (-) TimerEvent: {}
+[2.370585] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 0}
+[2.424901] (-) TimerEvent: {}
+[2.528857] (-) TimerEvent: {}
+[2.632834] (-) TimerEvent: {}
+[2.740876] (-) TimerEvent: {}
+[2.848873] (-) TimerEvent: {}
+[2.956935] (-) TimerEvent: {}
+[3.064885] (-) TimerEvent: {}
+[3.165872] (-) TimerEvent: {}
+[3.267067] (-) TimerEvent: {}
+[3.368631] (-) TimerEvent: {}
+[3.470613] (-) TimerEvent: {}
+[3.572784] (-) TimerEvent: {}
+[3.674305] (-) TimerEvent: {}
+[3.776058] (-) TimerEvent: {}
+[3.877912] (-) TimerEvent: {}
+[3.979610] (-) TimerEvent: {}
+[4.053490] (diffdrive_arduino) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o\x1b[0m\n'}
+[4.079847] (-) TimerEvent: {}
+[4.182016] (-) TimerEvent: {}
+[4.284985] (-) TimerEvent: {}
+[4.386357] (-) TimerEvent: {}
+[4.487287] (-) TimerEvent: {}
+[4.589215] (-) TimerEvent: {}
+[4.690010] (-) TimerEvent: {}
+[4.790871] (-) TimerEvent: {}
+[4.891815] (-) TimerEvent: {}
+[4.993539] (-) TimerEvent: {}
+[5.095424] (-) TimerEvent: {}
+[5.197028] (-) TimerEvent: {}
+[5.298026] (-) TimerEvent: {}
+[5.400082] (-) TimerEvent: {}
+[5.502222] (-) TimerEvent: {}
+[5.604955] (-) TimerEvent: {}
+[5.706947] (-) TimerEvent: {}
+[5.812968] (-) TimerEvent: {}
+[5.915718] (-) TimerEvent: {}
+[6.019053] (-) TimerEvent: {}
+[6.120829] (-) TimerEvent: {}
+[6.222825] (-) TimerEvent: {}
+[6.324771] (-) TimerEvent: {}
+[6.427011] (-) TimerEvent: {}
+[6.532964] (-) TimerEvent: {}
+[6.636285] (-) TimerEvent: {}
+[6.739171] (-) TimerEvent: {}
+[6.841021] (-) TimerEvent: {}
+[6.943010] (-) TimerEvent: {}
+[7.045084] (-) TimerEvent: {}
+[7.147688] (-) TimerEvent: {}
+[7.250366] (-) TimerEvent: {}
+[7.353560] (-) TimerEvent: {}
+[7.456198] (-) TimerEvent: {}
+[7.558942] (-) TimerEvent: {}
+[7.661624] (-) TimerEvent: {}
+[7.764258] (-) TimerEvent: {}
+[7.866903] (-) TimerEvent: {}
+[7.969834] (-) TimerEvent: {}
+[8.072606] (-) TimerEvent: {}
+[8.175390] (-) TimerEvent: {}
+[8.278309] (-) TimerEvent: {}
+[8.381299] (-) TimerEvent: {}
+[8.484392] (-) TimerEvent: {}
+[8.587465] (-) TimerEvent: {}
+[8.689268] (-) TimerEvent: {}
+[8.790963] (-) TimerEvent: {}
+[8.892315] (-) TimerEvent: {}
+[8.993930] (-) TimerEvent: {}
+[9.095364] (-) TimerEvent: {}
+[9.196649] (-) TimerEvent: {}
+[9.298317] (-) TimerEvent: {}
+[9.399962] (-) TimerEvent: {}
+[9.501398] (-) TimerEvent: {}
+[9.604948] (-) TimerEvent: {}
+[9.710780] (-) TimerEvent: {}
+[9.817046] (-) TimerEvent: {}
+[9.919291] (-) TimerEvent: {}
+[10.024578] (-) TimerEvent: {}
+[10.126862] (-) TimerEvent: {}
+[10.229391] (-) TimerEvent: {}
+[10.331369] (-) TimerEvent: {}
+[10.433867] (-) TimerEvent: {}
+[10.536113] (-) TimerEvent: {}
+[10.637906] (-) TimerEvent: {}
+[10.739801] (-) TimerEvent: {}
+[10.841748] (-) TimerEvent: {}
+[10.944019] (-) TimerEvent: {}
+[11.046090] (-) TimerEvent: {}
+[11.148441] (-) TimerEvent: {}
+[11.250894] (-) TimerEvent: {}
+[11.353495] (-) TimerEvent: {}
+[11.455532] (-) TimerEvent: {}
+[11.558828] (-) TimerEvent: {}
+[11.662310] (-) TimerEvent: {}
+[11.766790] (-) TimerEvent: {}
+[11.870253] (-) TimerEvent: {}
+[11.972992] (-) TimerEvent: {}
+[12.076118] (-) TimerEvent: {}
+[12.180391] (-) TimerEvent: {}
+[12.283086] (-) TimerEvent: {}
+[12.386426] (-) TimerEvent: {}
+[12.490102] (-) TimerEvent: {}
+[12.593169] (-) TimerEvent: {}
+[12.696158] (-) TimerEvent: {}
+[12.799882] (-) TimerEvent: {}
+[12.903213] (-) TimerEvent: {}
+[13.006127] (-) TimerEvent: {}
+[13.109011] (-) TimerEvent: {}
+[13.212512] (-) TimerEvent: {}
+[13.315501] (-) TimerEvent: {}
+[13.418444] (-) TimerEvent: {}
+[13.520999] (-) TimerEvent: {}
+[13.624404] (-) TimerEvent: {}
+[13.727527] (-) TimerEvent: {}
+[13.830984] (-) TimerEvent: {}
+[13.935483] (-) TimerEvent: {}
+[14.038207] (-) TimerEvent: {}
+[14.143333] (-) TimerEvent: {}
+[14.246937] (-) TimerEvent: {}
+[14.352308] (-) TimerEvent: {}
+[14.457164] (-) TimerEvent: {}
+[14.562504] (-) TimerEvent: {}
+[14.669094] (-) TimerEvent: {}
+[14.771436] (-) TimerEvent: {}
+[14.879150] (-) TimerEvent: {}
+[14.982986] (-) TimerEvent: {}
+[15.088011] (-) TimerEvent: {}
+[15.189371] (-) TimerEvent: {}
+[15.292868] (-) TimerEvent: {}
+[15.395409] (-) TimerEvent: {}
+[15.498274] (-) TimerEvent: {}
+[15.601636] (-) TimerEvent: {}
+[15.705349] (-) TimerEvent: {}
+[15.809430] (-) TimerEvent: {}
+[15.911399] (-) TimerEvent: {}
+[16.013856] (-) TimerEvent: {}
+[16.115393] (-) TimerEvent: {}
+[16.217826] (-) TimerEvent: {}
+[16.320031] (-) TimerEvent: {}
+[16.423005] (-) TimerEvent: {}
+[16.525616] (-) TimerEvent: {}
+[16.628240] (-) TimerEvent: {}
+[16.730857] (-) TimerEvent: {}
+[16.832268] (-) TimerEvent: {}
+[16.933795] (-) TimerEvent: {}
+[17.035084] (-) TimerEvent: {}
+[17.136177] (-) TimerEvent: {}
+[17.237227] (-) TimerEvent: {}
+[17.338677] (-) TimerEvent: {}
+[17.439885] (-) TimerEvent: {}
+[17.541119] (-) TimerEvent: {}
+[17.642419] (-) TimerEvent: {}
+[17.743918] (-) TimerEvent: {}
+[17.845271] (-) TimerEvent: {}
+[17.946531] (-) TimerEvent: {}
+[18.047989] (-) TimerEvent: {}
+[18.149411] (-) TimerEvent: {}
+[18.250775] (-) TimerEvent: {}
+[18.352120] (-) TimerEvent: {}
+[18.453075] (-) TimerEvent: {}
+[18.554036] (-) TimerEvent: {}
+[18.655176] (-) TimerEvent: {}
+[18.756125] (-) TimerEvent: {}
+[18.857141] (-) TimerEvent: {}
+[18.958369] (-) TimerEvent: {}
+[19.059536] (-) TimerEvent: {}
+[19.160587] (-) TimerEvent: {}
+[19.261965] (-) TimerEvent: {}
+[19.363046] (-) TimerEvent: {}
+[19.465288] (-) TimerEvent: {}
+[19.567481] (-) TimerEvent: {}
+[19.669766] (-) TimerEvent: {}
+[19.772338] (-) TimerEvent: {}
+[19.874756] (-) TimerEvent: {}
+[19.976091] (-) TimerEvent: {}
+[20.077084] (-) TimerEvent: {}
+[20.178074] (-) TimerEvent: {}
+[20.279593] (-) TimerEvent: {}
+[20.380534] (-) TimerEvent: {}
+[20.481872] (-) TimerEvent: {}
+[20.583175] (-) TimerEvent: {}
+[20.684657] (-) TimerEvent: {}
+[20.786204] (-) TimerEvent: {}
+[20.887335] (-) TimerEvent: {}
+[20.988282] (-) TimerEvent: {}
+[21.089524] (-) TimerEvent: {}
+[21.190531] (-) TimerEvent: {}
+[21.291564] (-) TimerEvent: {}
+[21.393061] (-) TimerEvent: {}
+[21.494198] (-) TimerEvent: {}
+[21.595253] (-) TimerEvent: {}
+[21.696363] (-) TimerEvent: {}
+[21.797374] (-) TimerEvent: {}
+[21.898505] (-) TimerEvent: {}
+[21.999980] (-) TimerEvent: {}
+[22.102247] (-) TimerEvent: {}
+[22.203949] (-) TimerEvent: {}
+[22.305441] (-) TimerEvent: {}
+[22.406814] (-) TimerEvent: {}
+[22.510075] (-) TimerEvent: {}
+[22.613102] (-) TimerEvent: {}
+[22.716848] (-) TimerEvent: {}
+[22.822099] (-) TimerEvent: {}
+[22.924556] (-) TimerEvent: {}
+[23.027389] (-) TimerEvent: {}
+[23.130011] (-) TimerEvent: {}
+[23.234869] (-) TimerEvent: {}
+[23.340947] (-) TimerEvent: {}
+[23.443609] (-) TimerEvent: {}
+[23.546778] (-) TimerEvent: {}
+[23.649363] (-) TimerEvent: {}
+[23.757983] (-) TimerEvent: {}
+[23.860296] (-) TimerEvent: {}
+[23.962125] (-) TimerEvent: {}
+[24.063626] (-) TimerEvent: {}
+[24.164894] (-) TimerEvent: {}
+[24.265944] (-) TimerEvent: {}
+[24.368961] (-) TimerEvent: {}
+[24.470316] (-) TimerEvent: {}
+[24.573781] (-) TimerEvent: {}
+[24.681947] (-) TimerEvent: {}
+[24.789826] (-) TimerEvent: {}
+[24.892128] (-) TimerEvent: {}
+[24.994841] (-) TimerEvent: {}
+[25.096925] (-) TimerEvent: {}
+[25.198593] (-) TimerEvent: {}
+[25.300908] (-) TimerEvent: {}
+[25.402406] (-) TimerEvent: {}
+[25.504916] (-) TimerEvent: {}
+[25.609032] (-) TimerEvent: {}
+[25.711662] (-) TimerEvent: {}
+[25.812737] (-) TimerEvent: {}
+[25.913795] (-) TimerEvent: {}
+[26.015250] (-) TimerEvent: {}
+[26.116595] (-) TimerEvent: {}
+[26.217619] (-) TimerEvent: {}
+[26.318709] (-) TimerEvent: {}
+[26.420023] (-) TimerEvent: {}
+[26.430293] (diffdrive_arduino) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libfake_robot.so\x1b[0m\n'}
+[26.520223] (-) TimerEvent: {}
+[26.546375] (diffdrive_arduino) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiffdrive_arduino.so\x1b[0m\n'}
+[26.620561] (-) TimerEvent: {}
+[26.722125] (-) TimerEvent: {}
+[26.823814] (-) TimerEvent: {}
+[26.925661] (-) TimerEvent: {}
+[27.027696] (-) TimerEvent: {}
+[27.128812] (-) TimerEvent: {}
+[27.230177] (-) TimerEvent: {}
+[27.332858] (-) TimerEvent: {}
+[27.434636] (-) TimerEvent: {}
+[27.536463] (-) TimerEvent: {}
+[27.638108] (-) TimerEvent: {}
+[27.740262] (-) TimerEvent: {}
+[27.842184] (-) TimerEvent: {}
+[27.943561] (-) TimerEvent: {}
+[27.994922] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target fake_robot\n'}
+[28.043830] (-) TimerEvent: {}
+[28.145087] (-) TimerEvent: {}
+[28.167310] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[28.231093] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[28.245853] (-) TimerEvent: {}
+[28.346935] (-) TimerEvent: {}
+[28.427568] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[28.428801] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rodrigo/dev_ws/build/diffdrive_arduino'], 'cwd': '/home/rodrigo/dev_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'es:en'), ('USER', 'rodrigo'), ('SSH_CLIENT', '192.168.1.113 46662 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib:/home/rodrigo/dev_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rodrigo'), ('OLDPWD', '/home/rodrigo/dev_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/rodrigo/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rodrigo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rodrigo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'letter'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'es_ES.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/rodrigo/dev_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.113 46662 192.168.1.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble')]), 'shell': False}
+[28.447134] (-) TimerEvent: {}
+[28.477418] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[28.486369] (diffdrive_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[28.489283] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino//robot_hardware.xml\n'}
+[28.491113] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino//fake_robot_hardware.xml\n'}
+[28.494137] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[28.495695] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/lib/libfake_robot.so\n'}
+[28.507648] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers/robot_controller_example.yaml\n'}
+[28.509595] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/__pycache__/test_robot.launch.cpython-310.pyc\n'}
+[28.547434] (-) TimerEvent: {}
+[28.549301] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot.launch.py\n'}
+[28.550534] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/test_robot.launch.py\n'}
+[28.553600] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[28.555072] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[28.557095] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[28.558788] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[28.560557] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[28.562614] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[28.564235] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[28.565835] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[28.567464] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[28.569127] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[28.570669] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[28.572309] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[28.573183] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[28.611875] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[28.615016] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[28.617130] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[28.619126] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[28.621051] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[28.622368] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[28.623467] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[28.629701] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[28.647568] (-) TimerEvent: {}
+[28.748354] (-) TimerEvent: {}
+[28.850103] (-) TimerEvent: {}
+[28.919382] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[28.923169] (-) EventReactorShutdown: {}

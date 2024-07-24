@@ -114,12 +114,12 @@
 
 
     <!--Caster wheel base 1-->
-    <joint name="U_base_wheel_1_joint" type="continuous">
+    <joint name="U_base_wheel_1_joint" type="fixed">
         <origin xyz="0.05751 0 -0.0278" rpy="${pi} 0 0"/>
 
         <parent link="B_base_link"/>
         <child link="U_base_wheel_1_link"/>    
-        <axis xyz="0 0 1"/>
+        <!-- <axis xyz="0 0 1"/> -->
     </joint>
 
     <link name="U_base_wheel_1_link">
@@ -149,12 +149,12 @@
 
 
     <!--Caster wheel 1-->
-    <joint name="U_wheel_1_joint" type="continuous">
+    <joint name="U_wheel_1_joint" type="fixed">
         <origin xyz="0.01577 0 0.01622" rpy="${pi/2} 0 0"/>
 
         <parent link="U_base_wheel_1_link"/>
         <child link="U_wheel_1_link"/>    
-        <axis xyz="0 0 -1"/>   
+        <!-- <axis xyz="0 0 -1"/>    -->
     </joint>
 
     <link name="U_wheel_1_link">
@@ -184,12 +184,12 @@
 
 
     <!--Caster wheel base 2-->
-    <joint name="U_base_wheel_2_joint" type="continuous">
+    <joint name="U_base_wheel_2_joint" type="fixed">
         <origin xyz="-0.05751 0 -0.0278" rpy="${pi} 0 ${pi}"/>
 
         <parent link="B_base_link"/>
         <child link="U_base_wheel_2_link"/>    
-        <axis xyz="0 0 -1"/>
+        <!-- <axis xyz="0 0 -1"/> -->
     </joint>
 
     <link name="U_base_wheel_2_link">
@@ -219,12 +219,12 @@
 
 
     <!--Caster wheel 2-->
-    <joint name="U_wheel_2_joint" type="continuous">
+    <joint name="U_wheel_2_joint" type="fixed">
         <origin xyz="0.01577 0 0.01622" rpy="${pi/2} 0 0"/>
 
         <parent link="U_base_wheel_2_link"/>
         <child link="U_wheel_2_link"/>    
-        <axis xyz="0 0 1"/>  
+        <!-- <axis xyz="0 0 1"/>   -->
     </joint>
 
     <link name="U_wheel_2_link">

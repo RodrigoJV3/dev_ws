@@ -85,7 +85,7 @@
 
 
     <!-- Define friction for caster wheels -->
-    <gazebo reference="U_base_wheel_1_joint">
+    <!-- <gazebo reference="U_base_wheel_1_joint">
       <surface>
           <friction>
               <ode>
@@ -94,7 +94,7 @@
               </ode>
           </friction>
       </surface>
-  </gazebo>
+  </gazebo> -->
 
   <gazebo reference="U_wheel_1_joint">
     <surface>
@@ -108,7 +108,7 @@
 </gazebo>
 
 
-<gazebo reference="U_base_wheel_2_joint">
+<!-- <gazebo reference="U_base_wheel_2_joint">
   <surface>
       <friction>
           <ode>
@@ -117,7 +117,7 @@
           </ode>
       </friction>
   </surface>
-</gazebo>
+</gazebo> -->
 
 <gazebo reference="U_wheel_2_joint">
 <surface>
@@ -138,10 +138,10 @@
 
             <joint_name>L_wheel_joint</joint_name>
             <joint_name>R_wheel_joint</joint_name>
-            <joint_name>U_base_wheel_1_joint</joint_name>
+            <!-- <joint_name>U_base_wheel_1_joint</joint_name>
             <joint_name>U_wheel_1_joint</joint_name>
             <joint_name>U_base_wheel_2_joint</joint_name>
-            <joint_name>U_wheel_2_joint</joint_name>
+            <joint_name>U_wheel_2_joint</joint_name> -->
              <joint_name>Lidar_motor_joint</joint_name>
         </plugin>
     </gazebo>

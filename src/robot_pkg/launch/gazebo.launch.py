@@ -4,64 +4,71 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
-import xacro
 
 
 def generate_launch_description():
 
-    # Specify the name of the package and path to xacro file within the package
-    pkg_name = 'robot_pkg'
-    file_subpath = 'urdf/TTR01.urdf.xacro'
+    package_name='robot_pkg'
 
-    # Use xacro to process the file
-    xacro_file = os.path.join(get_package_share_directory(pkg_name), file_subpath)
-    robot_description_raw = xacro.process_file(xacro_file).toxml()
-
-    # Configure the node
-    node_robot_state_publisher = Node(
-        package='robot_state_publisher',
-        executable='robot_state_publisher',
-        output='screen',
-        parameters=[{
-            'robot_description': robot_description_raw,
-            'use_sim_time': True
-        }] 
+    rsp = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory(package_name),'launch','rsp.launch.py'
+                )]), launch_arguments={'use_sim_time': 'true', 'use_ros2_control': 'true'}.items()
     )
 
-    # Include the Gazebo launch file
+    # joystick = IncludeLaunchDescription(
+    #             PythonLaunchDescriptionSource([os.path.join(
+    #                 get_package_share_directory(package_name),'launch','joystick.launch.py'
+    #             )]), launch_arguments={'use_sim_time': 'true'}.items()
+    # )
+
+    # twist_mux_params = os.path.join(get_package_share_directory(package_name),'config','twist_mux.yaml')
+    # twist_mux = Node(
+    #         package="twist_mux",
+    #         executable="twist_mux",
+    #         parameters=[twist_mux_params, {'use_sim_time': True}],
+    #         remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
+    #     )
+
+    gazebo_params_file = os.path.join(get_package_share_directory(package_name),'config','gazebo_params.yaml')
+
+    # Include the Gazebo launch file, provided by the gazebo_ros package
     gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource([
-            os.path.join(
-                get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py'
-            )
-        ]),
-    )
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
+                    launch_arguments={'extra_gazebo_args': '--ros-args --params-file ' + gazebo_params_file}.items()
+             )
 
-    # Configure the spawn_entity node
-    spawn_entity = Node(
-        package='gazebo_ros',
-        executable='spawn_entity.py',
-        arguments=['-topic', 'robot_description', '-entity', 'TTR01'],
-        output='screen'
-    )
+    # Spawner node
+    spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
+                        arguments=['-topic', 'robot_description',
+                                   '-entity', 'TTR01'],
+                        output='screen')
 
-    # Configure the ros2_control node
+    
+    # Setup for ros2_control
+
+    # Differential drive node
     diff_drive_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["diff_cont"],
     )
 
+    # Joint broadcaster node
     joint_broad_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["joint_broad"],
     )
 
-    # Run the nodes
+
+    # Launch nodes
     return LaunchDescription([
+        rsp,
+        #joystick,
+        #twist_mux,
         gazebo,
-        node_robot_state_publisher,
         spawn_entity,
         diff_drive_spawner,
         joint_broad_spawner

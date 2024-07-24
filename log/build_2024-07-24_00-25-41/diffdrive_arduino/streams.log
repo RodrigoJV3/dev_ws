@@ -1,0 +1,41 @@
+[0.050s] Invoking command in '/home/rodrigo/dev_ws/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/rodrigo/dev_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/rodrigo/dev_ws/build/diffdrive_arduino -- -j4 -l4
+[0.349s] [ 14%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[0.368s] [ 28%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[0.374s] [ 42%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o[0m
+[21.309s] [ 57%] [32m[1mLinking CXX shared library libdiffdrive_arduino.so[0m
+[23.003s] [ 71%] [32m[1mLinking CXX shared library libfake_robot.so[0m
+[23.344s] [ 85%] Built target diffdrive_arduino
+[23.897s] [100%] Built target fake_robot
+[23.947s] Invoked command in '/home/rodrigo/dev_ws/build/diffdrive_arduino' returned '0': AMENT_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/rodrigo/dev_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/rodrigo/dev_ws/build/diffdrive_arduino -- -j4 -l4
+[24.106s] Invoking command in '/home/rodrigo/dev_ws/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/rodrigo/dev_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/rodrigo/dev_ws/build/diffdrive_arduino
+[24.139s] -- Install configuration: ""
+[24.147s] -- Execute custom install script
+[24.148s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino//robot_hardware.xml
+[24.150s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino//fake_robot_hardware.xml
+[24.158s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so
+[24.159s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/lib/libfake_robot.so
+[24.164s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers/robot_controller_example.yaml
+[24.166s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/__pycache__/test_robot.launch.cpython-310.pyc
+[24.167s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot.launch.py
+[24.167s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/test_robot.launch.py
+[24.168s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh
+[24.170s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv
+[24.172s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino
+[24.173s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino
+[24.174s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh
+[24.176s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv
+[24.177s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh
+[24.179s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv
+[24.180s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash
+[24.181s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh
+[24.182s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh
+[24.184s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv
+[24.184s] -- Symlinking: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv
+[24.218s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino
+[24.220s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino
+[24.222s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_libraries-extras.cmake
+[24.223s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.225s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake
+[24.226s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake
+[24.227s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml
+[24.235s] Invoked command in '/home/rodrigo/dev_ws/build/diffdrive_arduino' returned '0': AMENT_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/rodrigo/dev_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/rodrigo/dev_ws/build/diffdrive_arduino
