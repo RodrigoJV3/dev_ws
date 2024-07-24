@@ -10,6 +10,7 @@ def generate_launch_description():
 
     package_name='robot_pkg'
 
+    # RSP
     rsp = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
                     get_package_share_directory(package_name),'launch','rsp.launch.py'
@@ -39,23 +40,18 @@ def generate_launch_description():
                     launch_arguments={'extra_gazebo_args': '--ros-args --params-file ' + gazebo_params_file}.items()
              )
 
-    # Spawner node
     spawn_entity = Node(package='gazebo_ros', executable='spawn_entity.py',
                         arguments=['-topic', 'robot_description',
                                    '-entity', 'TTR01'],
                         output='screen')
 
-    
-    # Setup for ros2_control
 
-    # Differential drive node
     diff_drive_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["diff_cont"],
     )
 
-    # Joint broadcaster node
     joint_broad_spawner = Node(
         package="controller_manager",
         executable="spawner",
@@ -66,8 +62,8 @@ def generate_launch_description():
     # Launch nodes
     return LaunchDescription([
         rsp,
-        #joystick,
-        #twist_mux,
+        # joystick,
+        # twist_mux,
         gazebo,
         spawn_entity,
         diff_drive_spawner,

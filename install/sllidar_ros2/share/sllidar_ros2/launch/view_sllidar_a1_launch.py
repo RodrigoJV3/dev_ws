@@ -1,1 +1,1 @@
-/home/rodrigo/dev_ws/src/sllidar_ros2/launch/view_sllidar_a1_launch.py
+/home/dev-pc/dev_ws/src/sllidar_ros2/launch/view_sllidar_a1_launch.py
