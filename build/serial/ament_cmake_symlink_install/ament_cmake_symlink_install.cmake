@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/dev-pc/dev_ws/install/serial/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rodrigo/dev_ws/install/serial/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/dev-pc/dev_ws/install/serial/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rodrigo/dev_ws/install/serial/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/dev-pc/dev_ws/install/serial/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/rodrigo/dev_ws/install/serial/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/dev-pc/dev_ws/install/serial/${destination}")
+      set(destination "/home/rodrigo/dev_ws/install/serial/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,61 +311,61 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "serial" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib")
-include("/home/dev-pc/dev_ws/build/serial/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/rodrigo/dev_ws/build/serial/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "include/serial/serial.h" "include/serial/v8stdint.h" "DESTINATION" "include/serial")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "include/serial/serial.h" "include/serial/v8stdint.h" "DESTINATION" "include/serial")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "include/serial/serial.h" "include/serial/v8stdint.h" "DESTINATION" "include/serial")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/serial/environment")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/serial/environment")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/serial/environment")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/serial/environment")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/serial/environment")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/serial/environment")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/serial/environment")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/serial" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/serial" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/serial" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/serial" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/serial" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/serial/environment")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/serial/environment")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/serial/environment")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/serial/environment")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/serial/environment")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/serial/environment")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/serial/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/serial/environment")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/serial/environment")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/serial/environment")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/serial/environment")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/serial/environment")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/serial/environment")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/serial/environment")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/serial")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/serial")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/serial")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/serial")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/serial")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/serial")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/serial")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/serial")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/serial")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/serial")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/serial")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/serial")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/serial")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/serial")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/serial")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/serial")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/serial")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/serial")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/serial")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/serial")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/packages/serial" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/packages/serial" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/packages/serial" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_index/share/ament_index/resource_index/packages/serial" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/serial/cmake")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/serial/cmake")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/serial/cmake")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/serial/cmake")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/serial/cmake")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/serial/cmake")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/serial/cmake")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/serial/cmake")
 
-# install(FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_core/serialConfig.cmake" "/home/dev-pc/dev_ws/build/serial/ament_cmake_core/serialConfig-version.cmake" "DESTINATION" "share/serial/cmake")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/build/serial/ament_cmake_core/serialConfig.cmake" "/home/dev-pc/dev_ws/build/serial/ament_cmake_core/serialConfig-version.cmake" "DESTINATION" "share/serial/cmake")
+# install(FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_core/serialConfig.cmake" "/home/rodrigo/dev_ws/build/serial/ament_cmake_core/serialConfig-version.cmake" "DESTINATION" "share/serial/cmake")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/build/serial/ament_cmake_core/serialConfig.cmake" "/home/rodrigo/dev_ws/build/serial/ament_cmake_core/serialConfig-version.cmake" "DESTINATION" "share/serial/cmake")
 
-# install(FILES "/home/dev-pc/dev_ws/src/serial/package.xml" "DESTINATION" "share/serial")
-ament_cmake_symlink_install_files("/home/dev-pc/dev_ws/src/serial" FILES "/home/dev-pc/dev_ws/src/serial/package.xml" "DESTINATION" "share/serial")
+# install(FILES "/home/rodrigo/dev_ws/src/serial/package.xml" "DESTINATION" "share/serial")
+ament_cmake_symlink_install_files("/home/rodrigo/dev_ws/src/serial" FILES "/home/rodrigo/dev_ws/src/serial/package.xml" "DESTINATION" "share/serial")

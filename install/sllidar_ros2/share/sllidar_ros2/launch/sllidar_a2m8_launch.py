@@ -1,1 +1,1 @@
-/home/dev-pc/dev_ws/src/sllidar_ros2/launch/sllidar_a2m8_launch.py
+/home/rodrigo/dev_ws/src/sllidar_ros2/launch/sllidar_a2m8_launch.py

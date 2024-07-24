@@ -1,0 +1,34 @@
+[0.114s] Invoking command in '/home/rodrigo/dev_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/serial -- -j4 -l4
+[0.950s] [ 14%] Built target gtest
+[0.989s] [ 42%] Built target serial
+[1.219s] [ 57%] Built target gtest_main
+[1.258s] [ 71%] Built target serial_example
+[1.479s] [ 85%] Built target serial-test-timer
+[1.634s] [100%] Built target serial-test
+[1.704s] Invoked command in '/home/rodrigo/dev_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/serial -- -j4 -l4
+[1.980s] Invoking command in '/home/rodrigo/dev_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/serial
+[2.025s] -- Install configuration: ""
+[2.033s] -- Execute custom install script
+[2.035s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/lib/libserial.a
+[2.036s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/include/serial/serial.h
+[2.036s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/include/serial/v8stdint.h
+[2.037s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/library_path.sh
+[2.038s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/library_path.dsv
+[2.038s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[2.039s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[2.042s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[2.043s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[2.044s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/path.sh
+[2.045s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/environment/path.dsv
+[2.047s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/local_setup.bash
+[2.048s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/local_setup.sh
+[2.049s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/local_setup.zsh
+[2.053s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/local_setup.dsv
+[2.054s] -- Symlinking: /home/rodrigo/dev_ws/install/serial/share/serial/package.dsv
+[2.118s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/ament_index/resource_index/packages/serial
+[2.119s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.119s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[2.128s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[2.129s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[2.130s] -- Up-to-date symlink: /home/rodrigo/dev_ws/install/serial/share/serial/package.xml
+[2.175s] Invoked command in '/home/rodrigo/dev_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/serial

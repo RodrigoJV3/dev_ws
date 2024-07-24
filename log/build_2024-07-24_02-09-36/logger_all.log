@@ -1,0 +1,345 @@
+[1.010s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[1.010s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, meson_args=[], ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb88a0a00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb89d9630>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb89d9630>>)
+[1.869s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.869s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.870s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.871s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rodrigo/dev_ws'
+[1.871s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.872s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.873s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.874s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.921s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'meson', 'python']
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'meson'
+[1.922s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.928s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.928s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.928s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.929s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.929s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.929s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.929s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.929s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'meson', 'python']
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'meson'
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore'
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore_ament_install'
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_pkg']
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_pkg'
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_meta']
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_meta'
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ros']
+[1.934s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ros'
+[1.945s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[1.946s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pkg) by extensions ['ignore', 'ignore_ament_install']
+[1.946s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pkg) by extension 'ignore'
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pkg) by extension 'ignore_ament_install'
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pkg) by extensions ['colcon_pkg']
+[1.947s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pkg) by extension 'colcon_pkg'
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pkg) by extensions ['colcon_meta']
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pkg) by extension 'colcon_meta'
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pkg) by extensions ['ros']
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_pkg) by extension 'ros'
+[1.951s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_pkg' with type 'ros.ament_cmake' and name 'robot_pkg'
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[1.952s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[1.953s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[1.954s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[1.957s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial' with type 'ros.ament_cmake' and name 'serial'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[1.958s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[1.959s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[1.960s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[1.962s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[1.963s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.963s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.963s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.963s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.963s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.035s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.035s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.044s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/rodrigo/dev_ws/install
+[2.054s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 329 installed packages in /opt/ros/humble
+[2.062s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.336s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'cmake_args' from command line to 'None'
+[2.336s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'cmake_target' from command line to 'None'
+[2.336s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.337s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[2.337s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[2.337s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[2.337s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'meson_args' from command line to '[]'
+[2.337s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[2.337s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[2.338s] Level 5:colcon.colcon_core.verb:set package 'robot_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.338s] DEBUG:colcon.colcon_core.verb:Building package 'robot_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rodrigo/dev_ws/build/robot_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rodrigo/dev_ws/install/robot_pkg', 'merge_install': False, 'meson_args': [], 'path': '/home/rodrigo/dev_ws/src/robot_pkg', 'symlink_install': True, 'test_result_base': None}
+[2.414s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'meson_args' from command line to '[]'
+[2.415s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[2.416s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[2.416s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.416s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rodrigo/dev_ws/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rodrigo/dev_ws/install/serial', 'merge_install': False, 'meson_args': [], 'path': '/home/rodrigo/dev_ws/src/serial', 'symlink_install': True, 'test_result_base': None}
+[2.498s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[2.498s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[2.498s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.498s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[2.499s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[2.499s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[2.499s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'meson_args' from command line to '[]'
+[2.499s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[2.499s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[2.499s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.500s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rodrigo/dev_ws/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rodrigo/dev_ws/install/sllidar_ros2', 'merge_install': False, 'meson_args': [], 'path': '/home/rodrigo/dev_ws/src/sllidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[2.579s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_args' from command line to 'None'
+[2.579s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target' from command line to 'None'
+[2.579s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.579s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[2.579s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[2.579s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[2.580s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'meson_args' from command line to '[]'
+[2.580s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[2.580s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[2.580s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.580s] DEBUG:colcon.colcon_core.verb:Building package 'diffdrive_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rodrigo/dev_ws/build/diffdrive_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rodrigo/dev_ws/install/diffdrive_arduino', 'merge_install': False, 'meson_args': [], 'path': '/home/rodrigo/dev_ws/src/diffdrive_arduino', 'symlink_install': True, 'test_result_base': None}
+[2.581s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.585s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.586s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rodrigo/dev_ws/src/serial' with build type 'ament_cmake'
+[2.587s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rodrigo/dev_ws/src/serial'
+[2.596s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.597s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.598s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.618s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rodrigo/dev_ws/src/robot_pkg' with build type 'ament_cmake'
+[2.618s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rodrigo/dev_ws/src/robot_pkg'
+[2.619s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.620s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.640s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rodrigo/dev_ws/src/sllidar_ros2' with build type 'ament_cmake'
+[2.641s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rodrigo/dev_ws/src/sllidar_ros2'
+[2.642s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.642s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.678s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rodrigo/dev_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/serial -- -j4 -l4
+[2.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rodrigo/dev_ws/build/robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/robot_pkg -- -j4 -l4
+[2.738s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rodrigo/dev_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/sllidar_ros2 -- -j4 -l4
+[2.990s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rodrigo/dev_ws/build/robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/robot_pkg -- -j4 -l4
+[3.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rodrigo/dev_ws/build/robot_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/robot_pkg
+[3.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rodrigo/dev_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/sllidar_ros2 -- -j4 -l4
+[3.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rodrigo/dev_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/serial -- -j4 -l4
+[3.508s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_pkg)
+[3.519s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rodrigo/dev_ws/build/robot_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/robot_pkg
+[3.527s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg' for CMake module files
+[3.531s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg' for CMake config files
+[3.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_pkg', 'cmake_prefix_path')
+[3.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/hook/cmake_prefix_path.ps1'
+[3.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/hook/cmake_prefix_path.dsv'
+[3.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/hook/cmake_prefix_path.sh'
+[3.554s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg/bin'
+[3.555s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg/lib/pkgconfig/robot_pkg.pc'
+[3.557s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg/lib/python3.10/site-packages'
+[3.559s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg/bin'
+[3.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.ps1'
+[3.567s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.dsv'
+[3.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.sh'
+[3.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.bash'
+[3.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.zsh'
+[3.587s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rodrigo/dev_ws/install/robot_pkg/share/colcon-core/packages/robot_pkg)
+[3.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_pkg)
+[3.720s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg' for CMake module files
+[3.723s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg' for CMake config files
+[3.726s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_pkg', 'cmake_prefix_path')
+[3.727s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/hook/cmake_prefix_path.ps1'
+[3.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/hook/cmake_prefix_path.dsv'
+[3.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/hook/cmake_prefix_path.sh'
+[3.737s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg/bin'
+[3.738s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg/lib/pkgconfig/robot_pkg.pc'
+[3.739s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg/lib/python3.10/site-packages'
+[3.741s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/robot_pkg/bin'
+[3.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.ps1'
+[3.745s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.dsv'
+[3.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.sh'
+[3.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.bash'
+[3.763s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/robot_pkg/share/robot_pkg/package.zsh'
+[3.765s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rodrigo/dev_ws/install/robot_pkg/share/colcon-core/packages/robot_pkg)
+[3.792s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rodrigo/dev_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/serial
+[3.911s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[3.913s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial' for CMake module files
+[3.916s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rodrigo/dev_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/serial
+[3.919s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial' for CMake config files
+[3.920s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[3.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[3.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[3.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[3.929s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/lib'
+[3.930s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/bin'
+[3.930s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/lib/pkgconfig/serial.pc'
+[3.931s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/lib/python3.10/site-packages'
+[3.932s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/bin'
+[3.933s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/serial/share/serial/package.ps1'
+[3.935s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rodrigo/dev_ws/install/serial/share/serial/package.dsv'
+[3.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/serial/share/serial/package.sh'
+[3.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/serial/share/serial/package.bash'
+[3.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/serial/share/serial/package.zsh'
+[3.944s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rodrigo/dev_ws/install/serial/share/colcon-core/packages/serial)
+[3.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rodrigo/dev_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/sllidar_ros2
+[4.115s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[4.118s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2' for CMake module files
+[4.116s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rodrigo/dev_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/sllidar_ros2
+[4.121s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2' for CMake config files
+[4.123s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[4.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[4.127s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[4.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[4.132s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/lib'
+[4.133s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/bin'
+[4.133s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[4.134s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[4.136s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/bin'
+[4.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[4.140s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[4.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[4.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[4.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[4.149s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rodrigo/dev_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[4.200s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[4.202s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial' for CMake module files
+[4.204s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial' for CMake config files
+[4.205s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[4.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[4.209s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[4.211s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[4.215s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/lib'
+[4.215s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/bin'
+[4.216s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/lib/pkgconfig/serial.pc'
+[4.220s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/lib/python3.10/site-packages'
+[4.222s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/serial/bin'
+[4.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/serial/share/serial/package.ps1'
+[4.231s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rodrigo/dev_ws/install/serial/share/serial/package.dsv'
+[4.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/serial/share/serial/package.sh'
+[4.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/serial/share/serial/package.bash'
+[4.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/serial/share/serial/package.zsh'
+[4.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rodrigo/dev_ws/install/serial/share/colcon-core/packages/serial)
+[4.247s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rodrigo/dev_ws/src/diffdrive_arduino' with build type 'ament_cmake'
+[4.249s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rodrigo/dev_ws/src/diffdrive_arduino'
+[4.250s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.250s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rodrigo/dev_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/diffdrive_arduino -- -j4 -l4
+[4.622s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[4.624s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2' for CMake module files
+[4.627s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2' for CMake config files
+[4.629s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[4.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[4.633s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[4.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[4.640s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/lib'
+[4.641s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/bin'
+[4.642s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[4.643s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[4.644s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/sllidar_ros2/bin'
+[4.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[4.650s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[4.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[4.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[4.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[4.669s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rodrigo/dev_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[4.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rodrigo/dev_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble /usr/bin/cmake --build /home/rodrigo/dev_ws/build/diffdrive_arduino -- -j4 -l4
+[4.849s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rodrigo/dev_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/diffdrive_arduino
+[4.955s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[4.956s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino' for CMake module files
+[4.960s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino' for CMake config files
+[4.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[4.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[4.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rodrigo/dev_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=/home/rodrigo/dev_ws/install/serial:/home/rodrigo/dev_ws/install/sllidar_ros2:/home/rodrigo/dev_ws/install/diffdrive_arduino:/home/rodrigo/dev_ws/install/robot_pkg:/opt/ros/humble /usr/bin/cmake --install /home/rodrigo/dev_ws/build/diffdrive_arduino
+[4.967s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[4.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[4.972s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib'
+[4.973s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[4.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[4.976s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[4.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[4.980s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/bin'
+[4.980s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[4.982s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib/python3.10/site-packages'
+[4.982s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/bin'
+[4.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[4.986s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[4.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[4.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[4.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[4.996s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rodrigo/dev_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[5.187s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[5.189s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino' for CMake module files
+[5.193s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino' for CMake config files
+[5.196s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[5.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[5.201s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[5.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[5.210s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib'
+[5.211s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[5.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[5.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[5.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[5.224s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/bin'
+[5.224s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[5.226s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/lib/python3.10/site-packages'
+[5.227s] Level 1:colcon.colcon_core.environment:checking '/home/rodrigo/dev_ws/install/diffdrive_arduino/bin'
+[5.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[5.232s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[5.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[5.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[5.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/rodrigo/dev_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[5.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rodrigo/dev_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[5.247s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.248s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.248s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.248s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.269s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.270s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.270s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.334s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.335s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rodrigo/dev_ws/install/local_setup.ps1'
+[5.339s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rodrigo/dev_ws/install/_local_setup_util_ps1.py'
+[5.347s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rodrigo/dev_ws/install/setup.ps1'
+[5.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rodrigo/dev_ws/install/local_setup.sh'
+[5.360s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rodrigo/dev_ws/install/_local_setup_util_sh.py'
+[5.363s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rodrigo/dev_ws/install/setup.sh'
+[5.370s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rodrigo/dev_ws/install/local_setup.bash'
+[5.374s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rodrigo/dev_ws/install/setup.bash'
+[5.380s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rodrigo/dev_ws/install/local_setup.zsh'
+[5.384s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rodrigo/dev_ws/install/setup.zsh'

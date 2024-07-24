@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dev-pc/dev_ws/src/serial/examples/serial_example.cc" "CMakeFiles/serial_example.dir/examples/serial_example.cc.o" "gcc" "CMakeFiles/serial_example.dir/examples/serial_example.cc.o.d"
+  "/home/rodrigo/dev_ws/src/serial/examples/serial_example.cc" "CMakeFiles/serial_example.dir/examples/serial_example.cc.o" "gcc" "CMakeFiles/serial_example.dir/examples/serial_example.cc.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/dev-pc/dev_ws/build/serial/CMakeFiles/serial.dir/DependInfo.cmake"
+  "/home/rodrigo/dev_ws/build/serial/CMakeFiles/serial.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
