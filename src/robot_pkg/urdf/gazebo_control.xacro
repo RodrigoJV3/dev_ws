@@ -10,7 +10,7 @@
             <update_rate>50</update_rate>
             <left_joint>L_wheel_joint</left_joint>
             <right_joint>R_wheel_joint</right_joint>
-            <wheel_separation>0.2115</wheel_separation> <!-- Adjust according to your robot -->
+            <wheel_separation>0.208</wheel_separation> <!-- Adjust according to your robot -->
             <wheel_diameter>0.065</wheel_diameter> <!-- Adjust according to your wheels -->
 
             <!-- Limits -->

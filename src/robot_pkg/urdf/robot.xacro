@@ -43,7 +43,7 @@
 
     <!--Left wheel-->
     <joint name="L_wheel_joint" type="continuous">
-        <origin xyz="0 -0.10575 -0.02356" rpy="${pi/2} ${pi/2} 0"/>
+        <origin xyz="0 -0.104 -0.02356" rpy="${pi/2} ${pi/2} 0"/>
 
         <parent link="B_base_link"/>
         <child link="L_wheel_link"/>    
@@ -79,7 +79,7 @@
 
     <!--Right wheel-->
     <joint name="R_wheel_joint" type="continuous">
-        <origin xyz="0 0.10575 -0.02356" rpy="${-pi/2} ${pi/2} 0"/>
+        <origin xyz="0 0.104 -0.02356" rpy="${-pi/2} ${pi/2} 0"/>
 
         <parent link="B_base_link"/>
         <child link="R_wheel_link"/>    
