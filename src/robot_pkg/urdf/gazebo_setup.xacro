@@ -51,6 +51,10 @@
       <material>Gazebo/White</material>
     </gazebo>
   
+    <gazebo reference="Lidar_motor_link">
+      <material>Gazebo/Black</material>
+    </gazebo>
+  
     <gazebo reference="Camera_base_link">
       <material>Gazebo/Black</material>
     </gazebo>
@@ -65,8 +69,8 @@
         <surface>
             <friction>
                 <ode>
-                    <mu>1.0</mu>
-                    <mu2>1.0</mu2>
+                    <mu>0.6</mu>
+                    <mu2>0.6</mu2>
                 </ode>
             </friction>
         </surface>
@@ -76,8 +80,8 @@
         <surface>
             <friction>
                 <ode>
-                    <mu>1.0</mu>
-                    <mu2>1.0</mu2>
+                    <mu>0.6</mu>
+                    <mu2>0.6</mu2>
                 </ode>
             </friction>
         </surface>
@@ -89,8 +93,8 @@
       <surface>
           <friction>
               <ode>
-                  <mu>0.1</mu>
-                  <mu2>0.1</mu2>
+                  <mu>0.001</mu>
+                  <mu2>0.001</mu2>
               </ode>
           </friction>
       </surface>
@@ -100,8 +104,8 @@
     <surface>
         <friction>
             <ode>
-                <mu>0.3</mu>
-                <mu2>0.3</mu2>
+                <mu>0.01</mu>
+                <mu2>0.01</mu2>
             </ode>
         </friction>
     </surface>
@@ -112,8 +116,8 @@
   <surface>
       <friction>
           <ode>
-              <mu>0.1</mu>
-              <mu2>0.1</mu2>
+              <mu>0.001</mu>
+              <mu2>0.001</mu2>
           </ode>
       </friction>
   </surface>
@@ -123,8 +127,8 @@
 <surface>
     <friction>
         <ode>
-            <mu>0.3</mu>
-            <mu2>0.3</mu2>
+            <mu>0.01</mu>
+            <mu2>0.01</mu2>
         </ode>
     </friction>
 </surface>

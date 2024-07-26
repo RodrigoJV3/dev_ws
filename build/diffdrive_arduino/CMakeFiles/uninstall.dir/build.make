@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rodrigo/dev_ws/src/diffdrive_arduino
+CMAKE_SOURCE_DIR = /home/dev-pc/dev_ws/src/diffdrive_arduino
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rodrigo/dev_ws/build/diffdrive_arduino
+CMAKE_BINARY_DIR = /home/dev-pc/dev_ws/build/diffdrive_arduino
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/rodrigo/dev_ws/build/diffdrive_arduino && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rodrigo/dev_ws/src/diffdrive_arduino /home/rodrigo/dev_ws/src/diffdrive_arduino /home/rodrigo/dev_ws/build/diffdrive_arduino /home/rodrigo/dev_ws/build/diffdrive_arduino /home/rodrigo/dev_ws/build/diffdrive_arduino/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dev-pc/dev_ws/build/diffdrive_arduino && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dev-pc/dev_ws/src/diffdrive_arduino /home/dev-pc/dev_ws/src/diffdrive_arduino /home/dev-pc/dev_ws/build/diffdrive_arduino /home/dev-pc/dev_ws/build/diffdrive_arduino /home/dev-pc/dev_ws/build/diffdrive_arduino/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

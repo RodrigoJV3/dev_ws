@@ -40,7 +40,7 @@
 
         <parent link="Lidar_base_link"/>
         <child link="Lidar_motor_link"/>    
-        <axis xyz="0 0 1"/>  
+        <axis xyz="0 0 -1"/>  
     </joint>
 
     <link name="Lidar_motor_link">
