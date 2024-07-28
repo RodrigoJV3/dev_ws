@@ -1,6 +1,0 @@
-Invoking command in '/home/dev-pc/dev_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dev-pc/dev_ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev-pc/dev_ws/install/sllidar_ros2
-Invoked command in '/home/dev-pc/dev_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dev-pc/dev_ws/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/dev-pc/dev_ws/install/sllidar_ros2
-Invoking command in '/home/dev-pc/dev_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dev-pc/dev_ws/build/sllidar_ros2 -- -j8 -l8
-Invoked command in '/home/dev-pc/dev_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dev-pc/dev_ws/build/sllidar_ros2 -- -j8 -l8
-Invoking command in '/home/dev-pc/dev_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dev-pc/dev_ws/build/sllidar_ros2
-Invoked command in '/home/dev-pc/dev_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dev-pc/dev_ws/build/sllidar_ros2
