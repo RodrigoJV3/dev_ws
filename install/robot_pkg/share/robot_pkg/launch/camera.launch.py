@@ -1,1 +1,0 @@
-/home/dev-pc/dev_ws/src/robot_pkg/launch/camera.launch.py

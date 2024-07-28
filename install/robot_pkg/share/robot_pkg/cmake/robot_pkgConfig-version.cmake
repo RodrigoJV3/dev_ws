@@ -1,1 +1,0 @@
-/home/dev-pc/dev_ws/build/robot_pkg/ament_cmake_core/robot_pkgConfig-version.cmake
