@@ -2,13 +2,14 @@
 
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="TTR01">
 
+    <xacro:arg name="use_ros2_control" default="true"/>
+    <xacro:arg name="sim_mode" default="false"/>
+
     <xacro:include filename="robot_parameters.xacro"/>
     <xacro:include filename="robot.xacro"/>
     <xacro:include filename="gazebo_setup.xacro"/>
     <xacro:include filename="lidar.xacro"/>
     <xacro:include filename="camera.xacro" />
-
-    <xacro:arg name="use_ros2_control" default="true"/>
     
     <xacro:if value="$(arg use_ros2_control)">
         <xacro:include filename="ros2_control.xacro" />
