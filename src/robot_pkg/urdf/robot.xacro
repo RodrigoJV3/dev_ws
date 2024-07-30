@@ -57,7 +57,8 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>          
-                <cylinder length="${wheel_thickness}" radius="${wheel_radius}"/>
+                <sphere radius="${wheel_radius}"/>
+                <!-- <cylinder length="${wheel_thickness}" radius="${wheel_radius}"/> -->
             </geometry>
         </collision>
 
@@ -88,7 +89,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>          
-                <cylinder length="${wheel_thickness}" radius="${wheel_radius}"/>
+                <sphere radius="${wheel_radius}"/>
             </geometry>
         </collision>
 
