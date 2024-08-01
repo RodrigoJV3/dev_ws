@@ -35,12 +35,11 @@
     </link>
 
     <!--Lidar motor frame-->
-    <joint name="Lidar_motor_joint" type="continuous">
+    <joint name="Lidar_motor_joint" type="fixed">
         <origin xyz="-0.011 0 0.01225" rpy="0 0 0"/>
 
         <parent link="Lidar_base_link"/>
-        <child link="Lidar_motor_link"/>    
-        <axis xyz="0 0 -1"/>  
+        <child link="Lidar_motor_link"/>     
     </joint>
 
     <link name="Lidar_motor_link">
@@ -73,8 +72,9 @@
     <gazebo reference="Lidar_motor_link">
         <sensor name="laser" type="ray">
             <pose> 0 0 0 0 0 0 </pose>
-            <visualize> false </visualize>
-            <upadet_rate> 10 </upadet_rate>
+            <always_on>true</always_on>
+            <visualize> true </visualize>
+            <update_rate> 10 </update_rate>
             <ray>
                 <scan>
                     <horizontal>
@@ -84,6 +84,11 @@
                         <max_angle> 3.14 </max_angle>
                     </horizontal>
                 </scan>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.01</stddev>
+                </noise>
                 <range>
                     <min> 0.1 </min>
                     <max> 12 </max>

@@ -5,6 +5,17 @@
     <link name="base_link"> </link>
 
 
+    <!--Base footprint-->
+    <joint name="base_footprint_joint" type="fixed">
+        <origin xyz="0 0 -0.0341" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="base_footprint"/>        
+    </joint>
+    
+    <link name="base_footprint">
+    </link>
+
+
     <!--Bottom base-->
     <joint name="B_base_joint" type="fixed">
         <origin xyz="0 0 0.0225" rpy="0 0 0"/>
@@ -90,6 +101,7 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>          
                 <sphere radius="${wheel_radius}"/>
+                <!-- <cylinder length="${wheel_thickness}" radius="${wheel_radius}"/> -->
             </geometry>
         </collision>
 
