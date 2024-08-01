@@ -73,7 +73,7 @@
         <sensor name="laser" type="ray">
             <pose> 0 0 0 0 0 0 </pose>
             <always_on>true</always_on>
-            <visualize> true </visualize>
+            <visualize> false </visualize>
             <update_rate> 10 </update_rate>
             <ray>
                 <scan>
@@ -90,7 +90,7 @@
                     <stddev>0.01</stddev>
                 </noise>
                 <range>
-                    <min> 0.1 </min>
+                    <min> 0.15 </min>
                     <max> 12 </max>
                     <resolution> 0.01 </resolution>
                 </range>
