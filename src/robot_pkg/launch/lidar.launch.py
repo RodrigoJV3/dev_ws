@@ -11,7 +11,7 @@ def generate_launch_description():
     frame_id = 'Lidar_motor_link'
     inverted = False
     angle_compensate = True
-    scan_mode = 'Standard'
+    scan_mode = 'Sensitivity'
     
     return LaunchDescription([
 
