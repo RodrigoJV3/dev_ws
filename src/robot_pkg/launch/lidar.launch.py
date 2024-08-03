@@ -12,6 +12,7 @@ def generate_launch_description():
     inverted = False
     angle_compensate = True
     scan_mode = 'Sensitivity'
+    scan_frequency = 10.0
     
     return LaunchDescription([
 
@@ -26,7 +27,9 @@ def generate_launch_description():
                          'frame_id': frame_id,
                          'scan_mode': scan_mode,
                          'inverted': inverted,
-                         'angle_compensate': angle_compensate}],
+                         'angle_compensate': angle_compensate,
+                         'scan_frequency':scan_frequency
+                         }],
             output='screen'),
 
     ])
