@@ -97,3 +97,4 @@ def generate_launch_description():
     ])
 
 #ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
+#ros2 launch slam_toolbox online_async_launch.py slam_params_file:=/home/dev-pc/dev_ws/src/robot_pkg/config/mapper_params_online_async.yaml use_sim_time:=false
