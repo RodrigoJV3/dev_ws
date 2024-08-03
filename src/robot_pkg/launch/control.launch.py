@@ -21,6 +21,14 @@ def generate_launch_description():
                 )]), launch_arguments={'use_sim_time': 'false', 'use_ros2_control': 'true'}.items()
     )
 
+    # Define dummy_joint_state_publisher node
+    joint_state_publisher = Node(
+        package=package_name,
+        executable='joint_state_publisher.py',  # Make sure this matches the actual executable name
+        name='dummy_joint_state_publisher',
+        output='screen'
+    )
+
     # joystick = IncludeLaunchDescription(
     #             PythonLaunchDescriptionSource([os.path.join(
     #                 get_package_share_directory(package_name),'launch','joystick.launch.py'
@@ -89,6 +97,7 @@ def generate_launch_description():
     # Launch nodes
     return LaunchDescription([
         rsp,
+        joint_state_publisher,
         #joystick,
         #twist_mux,
         delayed_controller_manager,
