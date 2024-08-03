@@ -7,7 +7,7 @@ class DummyJointStatePublisher(Node):
     def __init__(self):
         super().__init__('dummy_joint_state_publisher')
         self.publisher_ = self.create_publisher(JointState, 'joint_states', 10)
-        self.timer = self.create_timer(1.0, self.publish_joint_states)
+        self.timer = self.create_timer(0.1, self.publish_joint_states)
         self.dummy_joint_states = JointState()
         
         # Update these names to match your actual joint names
@@ -30,3 +30,5 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
+#chmod +x ~/dev_ws/src/robot_pkg/scripts/joint_state_publisher.py
