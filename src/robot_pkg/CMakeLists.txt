@@ -29,7 +29,7 @@ install(PROGRAMS
 )
 
 # Install other files
-install(DIRECTORY launch urdf config rviz2 worlds scripts
+install(DIRECTORY launch urdf config rviz2 worlds scripts maps
   DESTINATION share/${PROJECT_NAME}
 )
 
