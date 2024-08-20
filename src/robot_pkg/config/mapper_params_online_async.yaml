@@ -20,7 +20,7 @@ slam_toolbox:
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
     # will use pose
-    map_file_name: /home/dev-pc/dev_ws/src/robot_pkg/maps/stage_01/stage_01
+    map_file_name: /home/dev-pc/dev_ws/src/robot_pkg/maps/real_stage_01/real_stage_01
     # map_start_pose: [0.0, 0.0, 0.0]
     map_start_at_dock: true
 
